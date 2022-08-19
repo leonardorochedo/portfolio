@@ -1,0 +1,61 @@
+header {
+    width: 100vw;
+    height: 10vh;
+    background: rgb(0, 0, 0);
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+    transition-timing-function: linear;
+    animation-name: slideBar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+header ul {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+
+    margin: 0 4rem 0 4rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+a:hover {
+    letter-spacing: 0.15rem;
+    transition: 0.5s;
+}
+
+@keyframes slideBar {
+    0% {
+        border-bottom: 1px solid white;
+    }
+    25% {
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    50% {
+        border-bottom: 1px solid rgb(116, 116, 116);
+    }
+    75% {
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    100% {
+        border-bottom: 1px solid white;
+    }
+}

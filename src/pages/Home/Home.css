@@ -1,0 +1,35 @@
+body {
+    background-color: #03001e;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 7rem 0 7rem;
+}
+
+.text h1 {
+    font-family: 'Roboto', Times, serif;
+    font-weight: 00;
+    font-size: 44px;
+    color: white;
+}
+
+.text h2 {
+    font-family: 'Roboto', Times, serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: white;
+}
+
+.text p {
+    font-family: 'Roboto', Times, serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+.image img {
+    width: 30rem;
+    height: auto;
+}

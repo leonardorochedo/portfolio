@@ -1,0 +1,12 @@
+ROTAS / HEADER = HOME -> ABOUT -> TECHS -> PROJECTS
+
+(X) Achar as fontes desejáveis
+() FINALIZAR Header em todas as paginas
+() Estruturar cada página
+() Estilizar cada página
+() Botão de fale comigo fixo em todas as paginas
+    () Dentro desse botão ter um qr code que leva pro whatsapp / ou um link de href
+() Fazer animações nos botoes mas não demais
+() Media Queries
+() Ir aplicando os assets quando necessário
+() Fazer os rotas pelo RRD ou NextJS
