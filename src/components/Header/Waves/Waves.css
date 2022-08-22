@@ -1,0 +1,40 @@
+svg.waves {
+    position: absolute;
+    width: 150rem;
+
+    z-index: -1;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wave-1 {
+    animation: moveWave1 3s ease-in-out infinite alternate;
+}
+
+.wave-2 {
+    animation: moveWave2 3s 1.2s ease-in-out infinite alternate;
+}
+
+.wave-3 {
+    animation: moveWave2 3s 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave1 {
+    from {
+        transform: translateX(-200px);
+    }
+}
+
+@keyframes moveWave2 {
+    from {
+        transform: translateX(-220px);
+    }
+}
+
+@keyframes moveWave3 {
+    from {
+        transform: translateX(-160px);
+    }
+}

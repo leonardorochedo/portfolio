@@ -1,5 +1,6 @@
 import { Home } from "./pages/Home/Home";
 import { Header } from './components/Header/Header';
+import { Waves } from "./components/Header/Waves/Waves";
 
 export function App() {
 
@@ -7,6 +8,7 @@ export function App() {
     <>
       <Header />
       <Home />
+      <Waves />
     </>  
   )
 }

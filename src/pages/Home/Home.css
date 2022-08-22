@@ -1,5 +1,6 @@
 body {
     background-color: #03001e;
+    overflow-x: hidden;
 }
 
 .container {
@@ -8,28 +9,60 @@ body {
     margin: 5rem 7rem 0 7rem;
 }
 
+.text {
+    margin: 4rem 10rem 0 0;
+    mix-blend-mode: exclusion;
+}
+
 .text h1 {
     font-family: 'Roboto', Times, serif;
-    font-weight: 00;
+    font-weight: bold;
     font-size: 44px;
     color: white;
 }
 
 .text h2 {
-    font-family: 'Roboto', Times, serif;
-    font-weight: 300;
+    font-family: 'Poppins', Times, serif;
+    font-weight: 600;
     font-size: 24px;
     color: white;
+
+    margin-top: 2rem;
 }
 
 .text p {
-    font-family: 'Roboto', Times, serif;
-    font-weight: 300;
+    font-family: 'Poppins', Times, serif;
+    font-weight: 400;
     font-size: 20px;
     color: white;
+}
+
+.text h1 span {
+    position: fixed;
+    cursor: default;
+
+    animation: handleShake 3s 0.1s infinite ease-in-out alternate;
+}
+
+.text .icons svg {
+    text-decoration: none;
+
+    margin: 3rem 1rem 0 0;
 }
 
 .image img {
     width: 30rem;
     height: auto;
+}
+
+@keyframes handleShake {
+    0% {
+        transform: rotate(330deg);
+    }
+    50% {
+        transform: rotate(380deg);
+    }
+    100% {
+        transform: rotate(330deg);
+    }
 }
