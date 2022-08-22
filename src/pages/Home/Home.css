@@ -50,9 +50,14 @@ body {
     margin: 3rem 1rem 0 0;
 }
 
+.image {
+    touch-action: none; /* useSpring */
+}
+
 .image img {
     width: 30rem;
     height: auto;
+    user-select: none; /* useSpring */
 }
 
 @keyframes handleShake {

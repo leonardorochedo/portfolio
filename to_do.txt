@@ -5,9 +5,10 @@ ROTAS / HEADER = HOME -> ABOUT -> TECHS -> PROJECTS
 (X) Fazer as ondas em background
 (X) Fazer o invert filter nas fontes
 () Estruturar e estilizar cada rota da pagina
+(- Arrumar BUG- ) Fazer a interação do mouse com a pagina Home
 
 () Botão de fale comigo fixo em todas as paginas
-    () Dentro desse botão ter um qr code que leva pro whatsapp / ou um link de href
+    (X) Dentro desse botão ter um qr code que leva pro whatsapp / ou um link de href
 
 () Fazer os rotas pelo RRD ou NextJS
 () Media Queries

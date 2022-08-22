@@ -1,8 +1,18 @@
 import React from 'react';
+import { useSpring, animated } from 'react-spring';
+import { useDrag } from '@use-gesture/react';
 
-import './Home.css'
+import './Home.css';
 
 export function Home() {
+
+    const imagePos = useSpring({ x: 0, y: 0 });
+
+    const bindLogoPos = useDrag((params) => {
+        imagePos.x.set(params.offset[0]);
+        imagePos.y.set(params.offset[1]);
+    });
+
     return (
         <div className='container'>
             <div className="text">
@@ -14,9 +24,12 @@ export function Home() {
                     <a href="https://www.linkedin.com/in/leonardo-rochedo-28b6a41a2/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
                 </div>
             </div>
-            <div className="image">
+            <animated.div  className="image" {...bindLogoPos()} style={{
+                x: imagePos.x,
+                y: imagePos.y,
+            }}>
                 <img src="src\assets\coding.png" alt="Homem sentado usando o computador" />
-            </div>
+            </animated.div>
 
         </div>
     );

@@ -1,0 +1,27 @@
+div.modal {
+    position: absolute;
+    text-align-last: center;
+
+    bottom: 15rem;
+    left: 35%;
+    padding: 2rem;
+
+    background-color: rgba(226, 226, 226, 0.977);
+    border-radius: 20px;
+
+    font-family: 'Poppins', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    box-shadow: 0px 0px 100000px 100000px #00000090;
+
+    transition: 0.5s;
+}
+
+div.modal h2 {
+    margin-bottom: 2rem;
+}
+
+div.modal h2 span {
+    color: green;
+}
