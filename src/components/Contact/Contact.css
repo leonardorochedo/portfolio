@@ -1,0 +1,79 @@
+div.modal {
+    display: none;
+    position: absolute;
+    text-align-last: center;
+
+    bottom: 15rem;
+    left: 35%;
+    padding: 2rem;
+
+    background-color: rgba(226, 226, 226, 0.977);
+    border-radius: 20px;
+
+    font-family: 'Poppins', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    
+    color: black;
+    box-shadow: 0px 0px 100000px 100000px #00000090;
+
+    transition: 0.5s;
+}
+
+div.modal button.close {
+    margin: -0.5rem 0 0 20rem;
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+div.modal button.close:hover {
+    opacity: 0.65;
+
+    transition: 0.3s;
+}
+
+div.modal h2 {
+    margin-bottom: 2rem;
+}
+
+div.modal h2 span {
+    color: green;
+    font-style: italic;
+}
+
+div.modal p {
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.button {
+    position: absolute;
+    margin: 28rem 0 0 0;
+}
+
+.button button {
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 20px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+
+    background: #f3a71acc;
+    cursor: pointer;
+
+    transition: 0.5s;
+
+}
+
+.button button:hover {
+    opacity: 0.75;
+    
+    transition: 0.5s;
+}
