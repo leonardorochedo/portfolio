@@ -1,2 +1,3 @@
-# portifolio
-Meu portifólio 😀!
+# Meu portifólio 😀!
+
+Portifólio em construção 🚧, em breve finalizado...
