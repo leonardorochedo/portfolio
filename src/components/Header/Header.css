@@ -1,3 +1,7 @@
+:root {
+    --animation-header: blue;
+}
+
 header {
     width: 100vw;
     height: 11.5vh;
@@ -18,20 +22,56 @@ header ul li {
     list-style-type: none;
     display: inline-block;
 
-    margin: 0 4rem 0 4rem;
+    margin: 0 3rem 0 3rem;
 }
 
+header ul li.home,
+header ul li.about,
+header ul li.tec,
+header ul li.proj,
 header ul li a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 24px;
 
+    margin-top: 4rem;
+    padding: 5px;
+
     color: aliceblue;
     transition: 0.5s;
+
+    transform: translate(-50%, -50%);
 }
 
-a:hover {
-    transition: 0.5s;
-    font-size: 16px;
+/* Transition menu */
+a.menu::after,
+span.menu::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    transition: 1s;
+    /* -webkit-mix-blend-mode: hue; */
+}
+
+a.menu::after {
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid var(--animation-header);
+    border-right: 2px solid var(--animation-header);
+}
+  
+span.menu::before {
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid var(--animation-header);
+    border-left: 2px solid var(--animation-header);
+} 
+
+a.menu:hover::after,
+a:hover span.menu::before  {
+    width: calc( 180px / 2);
+    height: calc( 50px / 2);
 }

@@ -9,11 +9,17 @@ import "./NotFound.css";
 
 export function NotFound() {
     return (
-        <>
+        <div className="container">
             <Header />
-            <h1>NADA AQUI</h1>
+            <div className="notfound">
+                <h1>Ops... 🚧</h1>
+                <h2>Parece que você digitou algo incorretamente</h2>
+                <p><i>Volte para a navegação pelo menu acima 😁</i></p>
+            </div>
             <Waves />
-            <Contact />
-        </>
+            <div className="btn">
+                <Contact />
+            </div>
+        </div>
     );
 }

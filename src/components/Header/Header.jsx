@@ -8,10 +8,10 @@ export function Header() {
     return (
         <header>
             <ul>
-                <li><Link to="/">ÍNICIO</Link></li>
-                <li><Link to="/sobre">SOBRE MIM</Link></li>
-                <li><Link to="/tecnologias">TECNOLOGIAS</Link></li>
-                <li><Link to="/projetos">PROJETOS</Link></li>
+                <li className='home'><Link to="/"><span className='menu'></span><a className='menu'>ÍNICIO</a></Link></li>
+                <li className='about'><Link to="/sobre"><span className='menu'></span><a className='menu'>SOBRE MIM</a></Link></li>
+                <li className='tec'><Link to="/tecnologias"><span className='menu'></span><a className='menu'>TECNOLOGIAS</a></Link></li>
+                <li className='proj'><Link to="/projetos"><span className='menu'></span><a className='menu'>PROJETOS</a></Link></li>
             </ul>
         </header>
     );

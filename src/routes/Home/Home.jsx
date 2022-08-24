@@ -21,9 +21,9 @@ export function Home() {
     });
 
     return (
-        <>
-        <Header />
         <div className='container'>
+            <Header />
+        <div className='container-home'>
             <div className="text">
                 <h1>Olá, me chamo Leonardo prazer <span>👋</span></h1>
                 <h2>Desenvolvedor Front End</h2>
@@ -42,6 +42,6 @@ export function Home() {
             <Waves />
             <Contact />
         </div>
-        </>
+        </div>
     );
 }

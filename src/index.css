@@ -5,6 +5,37 @@
   user-select: none; /* useSpring */
 }
 
+.container {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+h1 {
+  font-family: 'Roboto', Times, serif;
+  font-weight: bold;
+  font-size: 44px;
+  color: white;
+  mix-blend-mode: exclusion;
+}
+
+h2 {
+  font-family: 'Poppins', Times, serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+
+  margin-top: 2rem;
+  mix-blend-mode: exclusion;
+}
+
+p {
+  font-family: 'Poppins', Times, serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  mix-blend-mode: exclusion;
+}
+
 @font-face {
   font-family: 'Insanibc';
   src: url('./assets/Insanibc.ttf') format('truetype');

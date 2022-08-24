@@ -17,7 +17,7 @@ export function Contact() {
     return (
         <>
         <div className="button">
-            <button onClick={openModal}>Contato</button>
+            <button onClick={openModal}><img src="src\assets\send.svg" alt="Aviao de papel voando" />Contato</button>
         </div>
         <div className="modal">
             <button className='close' onClick={closeModal}><img src="src\assets\close.svg" alt="Icone de fechar" /></button>
