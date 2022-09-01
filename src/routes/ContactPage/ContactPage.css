@@ -1,0 +1,39 @@
+.contact {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container .whatsapp {
+    margin-top: 5rem;
+
+    width: 25rem;
+    height: 23rem;
+
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.873);
+    text-align-last: center;
+}
+
+.container .whatsapp h2 {
+    margin-bottom: 2rem;
+}
+
+.container .whatsapp span,
+.container .whatsapp p {
+    font-style: italic;
+}
+
+.container .whatsapp span {
+    color: rgb(230, 15, 190);
+}
+
+.container .whatsapp a {
+    -webkit-box-shadow: 2px 5px 16px 0px #000000, -50px -50px 0px -30px rgba(0,0,0,0); 
+    box-shadow: 2px 5px 16px 0px #000000, -50px -50px 0px -30px rgba(0,0,0,0);
+}
+
+.container .whatsapp p {
+    margin-top: 1rem;
+    color: yellow;
+}

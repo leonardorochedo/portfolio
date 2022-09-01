@@ -37,11 +37,6 @@ body {
     user-select: none; /* useSpring */
 }
 
-.btnHome .button button {
-    position: fixed;
-    margin: 30rem 0 0 -69.5rem;
-}
-
 @keyframes handleShake {
     0% {
         transform: rotate(330deg);

@@ -40,9 +40,7 @@ export function Home() {
                 <img src="src\assets\coding.png" alt="Homem sentado usando o computador" />
             </animated.div>
             <Waves />
-            <div className="btnHome">
-                <Contact />
-            </div>
+            <Contact />
         </div>
         </div>
     );

@@ -28,6 +28,10 @@ div.about h2 {
     font-weight: 500;
 }
 
+.btnAbout {
+    position: fixed;
+}
+
 .btnAbout .button button {
-    margin-top: 2rem;
+    margin-top: -28rem;
 }

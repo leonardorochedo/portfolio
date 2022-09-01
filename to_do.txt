@@ -11,4 +11,5 @@ ROTAS / HEADER = HOME -> ABOUT -> TECHS -> PROJECTS
 (X) Fazer os rotas pelo RRD ou NextJS
 () Estruturar e estilizar cada rota da pagina
 (- Arrumar BUG- ) Fazer a interação do mouse com a pagina Home
+() Arrumar modal e button da home
 () Media Queries
