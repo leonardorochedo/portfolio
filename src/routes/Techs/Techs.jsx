@@ -11,7 +11,7 @@ export function Techs() {
     return (
         <div className="container">
             <Header />
-            <h1>Tecnologias</h1>
+            <h1>HTML CSS JS REACT TS</h1>
             <Waves />
             <Contact />
         </div>

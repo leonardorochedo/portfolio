@@ -1,0 +1,33 @@
+:root {
+    --borderLogo: linear-gradient(90deg, rgba(224,255,0,1) 0%, rgba(225,251,3,1) 30%, rgba(0,14,255,1) 100%);
+}
+
+div.about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    height: 100%;
+}
+
+img.perfil {
+    width: 15rem;
+
+    /* border-radius: 50%; */
+    border: 2px solid transparent;
+    border-image: linear-gradient(48deg, rgba(224,255,0,1) 0%, rgba(225,251,3,1) 30%, rgba(0,14,255,1) 100%);
+    border-image-slice: 1;
+    padding: 0.25rem;
+
+    margin-top: 2rem;
+}
+
+div.about h2 {
+    font-weight: 500;
+}
+
+.btnAbout .button button {
+    margin-top: 2rem;
+}

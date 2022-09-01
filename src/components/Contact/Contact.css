@@ -37,11 +37,14 @@ div.modal button.close:hover {
 
 div.modal h2 {
     margin-bottom: 2rem;
+    margin-top: 0;
 }
 
 div.modal h2 span {
-    color: green;
+    color: #cc00ff;
     font-style: italic;
+
+    mix-blend-mode: none;
 }
 
 div.modal p {
@@ -51,7 +54,6 @@ div.modal p {
 
 .button {
     position: absolute;
-    margin: 28rem 0 0 0;
 }
 
 .button button {
