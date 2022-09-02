@@ -1,0 +1,26 @@
+.c {
+    position: absolute;
+    max-width: 500px;
+    max-height: 500px;
+    width: 50ch;
+    height: 50ch;
+    cursor: pointer;
+    will-change: transform, opacity;
+}
+  
+.front,
+.back {
+    background-size: 12rem;
+    background-repeat: no-repeat;
+
+    margin: 4rem 1.5rem; /* Centralizando */
+}
+
+.back {
+    background-image: url(src/assets/interrogation.png);
+}
+
+.card h2#change-opacity {
+    /* opacity: 0; */
+    transition: 0.35s;
+}

@@ -1,0 +1,52 @@
+.techs {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Background animation */
+.react {
+    background-image: url(src/assets/react-icon.png);
+}
+
+.typescript {
+    background-image: url(src/assets/type-icon.png);
+}
+
+.javascript {
+    background-image: url(src/assets/js-icon.png);
+}
+
+.html {
+    background-image: url(src/assets/mysql-icon.png);
+}
+
+
+/* Botão */
+.btnTech {
+    position: fixed;
+}
+
+.btnTech .button button {
+    margin-top: 5rem;
+}
+
+/* Cards */
+.card {
+    margin-top: 5rem;
+
+    width: 15rem;
+    height: 25rem;
+
+    /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+    text-align-last: center;
+
+    background-color: rgba(15, 15, 15, 0.908);
+    border-radius: 50px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.card h2 {
+    margin-top: 2rem;
+}

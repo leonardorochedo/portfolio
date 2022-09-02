@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Techs.css';
 
@@ -6,14 +6,26 @@ import './Techs.css';
 import { Header } from '../../../src/components/Header/Header';
 import { Waves } from "../../../src/components/Waves/Waves";
 import { Contact } from "../../../src/components/Contact/Contact";
+import { CardButton } from "../../../src/components/CardButton/CardButton";
 
 export function Techs() {
+
+
     return (
+        <>
         <div className="container">
             <Header />
-            <h1>HTML CSS JS REACT TS</h1>
-            <Waves />
-            <Contact />
         </div>
+        <div className="container techs">
+            <CardButton name="React" class="c front react"/>
+            <CardButton name="TypeScript" class="c front typescript"/>
+            <CardButton name="JavaScript" class="c front javascript"/>
+            <CardButton name="MySQL" class="c front html"/>
+            <Waves />
+            <div className="btnTech">
+                <Contact />
+            </div>
+        </div>
+        </>
     );
 }
