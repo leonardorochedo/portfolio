@@ -7,9 +7,9 @@ ROTAS / HEADER = HOME -> ABOUT -> TECHS -> PROJECTS
 (X) Botão de fale comigo fixo em todas as paginas
     (X) Dentro desse botão ter um qr code que leva pro whatsapp / ou um link de href
     (X) Fazer botão abrir modal
-
+(X) Arrumar modal e button da home
 (X) Fazer os rotas pelo RRD ou NextJS
+
 () Estruturar e estilizar cada rota da pagina
-(- Arrumar BUG- ) Fazer a interação do mouse com a pagina Home
-() Arrumar modal e button da home
-() Media Queries
+(- Arrumar BUG- ) Fazer a animação do useSpring do mouse com a pagina Home
+() Media Queries / Responsividade
