@@ -8,7 +8,7 @@ export function CardButton(props) {
 
     const [count, setCount] = useState(1)
     
-    const h2Text = useRef('')
+    const h2Text = useRef('???')
 
     const Flipped = () => {
         setFlipped((state) => !state)
@@ -16,7 +16,7 @@ export function CardButton(props) {
         setCount(count + 1)
 
         if(count % 2 == 0) {
-            h2Text.current = ""
+            h2Text.current = "???"
             console.log(h2Text)
 
         } else {

@@ -9,8 +9,6 @@ import { Contact } from "../../../src/components/Contact/Contact";
 import { CardButton } from "../../../src/components/CardButton/CardButton";
 
 export function Techs() {
-
-
     return (
         <>
         <div className="container">
