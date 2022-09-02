@@ -17,11 +17,9 @@ export function CardButton(props) {
 
         if(count % 2 == 0) {
             h2Text.current = "???"
-            console.log(h2Text)
 
         } else {
             h2Text.current = props.name
-            console.log(h2Text.current)
 
         }
     }

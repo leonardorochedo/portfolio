@@ -12,6 +12,16 @@ export function ContactPage() {
             <Header />
         </div>
         <div className="container contact">
+            <div className="form">
+            <h2 className='tittle-form'>Me mande um <i>E-mail!</i></h2>
+                <form action="https://formsubmit.co/learnir@outlook.com.br" method="POST">
+                    <input className='inputButtons' type="text" name='name' placeholder=' Nome' />
+                    <input className='inputButtons' type="text" name='cel' placeholder=' Celular' />
+                    <input className='inputButtons' type="email" name='email' placeholder=' Seu e-mail' />
+                    <textarea name="message" placeholder=' Digite aqui sua mensagem...'></textarea>
+                    <button className='inputButtons' type='submit'>Enviar</button>
+                </form>
+            </div>
             <div className="whatsapp">
                 <h2>Fale comigo pelo <span>Whatsapp!</span></h2>
                 <a href="https://api.whatsapp.com/send?phone=+5543991309477&text=Olá, queria fazer um orçamento com você!" target="_blank">
