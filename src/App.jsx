@@ -5,6 +5,7 @@ import { Techs } from "./routes/Techs/Techs";
 import { Projects } from "./routes/Projects/Projects";
 import { ContactPage } from "./routes/ContactPage/ContactPage";
 import { NotFound } from "./routes/NotFound/NotFound";
+import { SuccessPage } from "./routes/SuccessPage/SuccessPage";
 
 // Lib
 import { 
@@ -23,6 +24,7 @@ export function App() {
         <Route path="/tecnologias" element={<Techs />} />
         <Route path="/projetos" element={<Projects />} />
         <Route path="/contato" element={<ContactPage />} />
+        <Route path="/sucesso" element={<SuccessPage />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

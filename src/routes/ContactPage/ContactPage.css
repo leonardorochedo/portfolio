@@ -80,7 +80,7 @@
     resize: none;
 }
 
-.form form button {
+button.inputButtons {
     background-color: blue;
     border: none;
 
@@ -88,9 +88,11 @@
 
     cursor: pointer;
     transition: 0.5s;
+
+    width: 20rem;
 }
 
-.form form button:hover {
+button.inputButtons:hover {
     background: transparent;
 
     transition: 0.5s;

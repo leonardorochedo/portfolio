@@ -1,6 +1,7 @@
 import React from 'react';
 
 import emailjs from 'emailjs-com';
+import { Link } from 'react-router-dom';
 
 import { Header } from '../../components/Header/Header';
 import { Waves } from '../../components/Waves/Waves';
@@ -36,7 +37,7 @@ export function ContactPage() {
                     <input className='inputButtons' type="text" name='cel' placeholder=' Celular' />
                     <input className='inputButtons' type="email" name='email' placeholder=' Seu e-mail' />
                     <textarea name="message" required placeholder=' Digite aqui sua mensagem...'></textarea>
-                    <button className='inputButtons' type='submit'>Enviar</button>
+                    <Link to="/sucesso" style={{textDecoration: 'none'}}><button className='inputButtons' type='submit'>Enviar</button></Link>
                 </form>
             </div>
             <div className="whatsapp">
