@@ -1,0 +1,28 @@
+a.project-cards {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.project-card {
+    display: flex;
+    flex-direction: row;
+
+    height: 100vh;
+
+    background-color: rgba(52, 52, 52, 0.345);
+
+    border: none;
+}
+
+.project-card .text-card {
+    margin: 3rem;
+}
+
+.project-card .text-card p {
+    margin-top: 4rem;
+}
+
+
+.project-card img {
+    height: 60vh;
+}

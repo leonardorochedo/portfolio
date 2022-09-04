@@ -12,7 +12,7 @@ export function ContactPage() {
 
     const navigate = useNavigate()
 
-    function sendEmail(e) {
+    function sendEmail(e) { // function emailJS
         e.preventDefault();
 
         emailjs.sendForm('service_hbzvywk', 'template_fqpmqda', e.target, 'uBtKO-dBql1FyAWVL')

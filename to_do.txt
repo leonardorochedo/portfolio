@@ -9,13 +9,11 @@ ROTAS / HEADER = HOME -> ABOUT -> TECHS -> PROJECTS
     (X) Fazer botão abrir modal
 (X) Arrumar modal e button da home
 (X) Fazer os rotas pelo RRD ou NextJS
+(X) Estruturar e estilizar cada rota da pagina
 
-() Estruturar e estilizar cada rota da pagina
-(- Arrumar BUG- ) Fazer a animação do useSpring do mouse com a pagina Home
 () Media Queries / Responsividade
+(- Arrumar BUG- ) Fazer a animação do useSpring do mouse com a pagina Home
 
-DISABLED button
 
-Link dentro do button
-    tentar colocar uma classe no link
-    ou tentar passar o link dentre ou fora de um botao
+Mais pra frente
+Adicionar icones de linguagem usadas nos projects

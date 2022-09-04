@@ -25,7 +25,7 @@ export function Home() {
             <Header />
         <div className='container-home'>
             <div className="text">
-                <h1>Olá! me chamo Leonardo, Prazer <span>👋</span></h1>
+                <h1>Olá! Me chamo Leonardo. Prazer <span>👋</span></h1>
                 <h2>Desenvolvedor Front End</h2>
                 <p><i>Freelancer</i></p>
                 <div className="icons">

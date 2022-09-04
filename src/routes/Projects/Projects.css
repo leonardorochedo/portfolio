@@ -1,0 +1,23 @@
+h1.title-projects {
+    margin: 1rem 0 2rem 0;
+}
+
+.projects {
+    margin-top: 4rem;
+}
+
+.swiper {
+    background-color: rgba(52, 52, 52, 0.345);
+
+    height: 60vh;
+
+    border-radius: 100px;
+}
+
+.btnProjects {
+    position: fixed;
+}
+
+.btnProjects .button button {
+    margin-top: -25rem;
+}
