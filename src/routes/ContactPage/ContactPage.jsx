@@ -1,7 +1,6 @@
 import React from 'react';
 
 import emailjs from 'emailjs-com';
-import { Link } from 'react-router-dom';
 
 import { Header } from '../../components/Header/Header';
 import { Waves } from '../../components/Waves/Waves';
@@ -10,18 +9,41 @@ import './ContactPage.css';
 
 export function ContactPage() {
 
+    function toSuccessPage() {
+        const history = unstable_HistoryRouter
+        
+        localStorage.clear();
+        history.push('/sucesso');
+    }
+
     function sendEmail(e) {
         e.preventDefault();
 
         emailjs.sendForm('service_hbzvywk', 'template_fqpmqda', e.target, 'uBtKO-dBql1FyAWVL')
         .then((result) => {
-            alert('Email enviado seu corno')
-            console.log(result.text);
+            console.log(result.text)
         }, (error) => {
-            alert(error.message)
+            alert(error.message);
             console.log(error.text);
         });
         e.target.reset();
+    }
+
+    function toggleButton() {
+        const button = document.querySelector("#buttonForm");
+        const nameValue = document.querySelector(".nameValue").value;
+        const messageValue = document.querySelector(".messageValue").value;
+        const allInputValues = document.querySelectorAll(".inputValues").value;
+
+        if (messageValue != null && messageValue != "" && messageValue != undefined) {
+            button.disabled = false;
+            button.classList.remove("disabled")
+            button.classList.add("enabled")
+        } else {
+            button.disabled = true;
+            button.classList.remove("enabled")
+            button.classList.add("disabled")
+        }
     }
 
     return (
@@ -33,11 +55,11 @@ export function ContactPage() {
             <div className="form">
             <h2 className='tittle-form'>Me mande um <i>E-mail!</i></h2>
                 <form onSubmit={sendEmail}>
-                    <input className='inputButtons' type="text" name='name' placeholder=' Nome' />
-                    <input className='inputButtons' type="text" name='cel' placeholder=' Celular' />
-                    <input className='inputButtons' type="email" name='email' placeholder=' Seu e-mail' />
-                    <textarea name="message" required placeholder=' Digite aqui sua mensagem...'></textarea>
-                    <Link to="/sucesso" style={{textDecoration: 'none'}}><button className='inputButtons' type='submit'>Enviar</button></Link>
+                    <input className='inputButtons nameValue inputValues' type="text" name='name' placeholder=' Nome' onChange={setInterval(toggleButton, 1000)} />
+                    <input className='inputButtons inputValues' type="text" name='cel' placeholder=' Celular' />
+                    <input className='inputButtons inputValues' type="email" name='email' placeholder=' Seu e-mail' />
+                    <textarea className='messageValue' name="message" placeholder=' Digite aqui sua mensagem...' onChange={setInterval(toggleButton, 1000)} required></textarea>
+                    <button className='inputButtons' id="buttonForm" type='submit' >Enviar</button>
                 </form>
             </div>
             <div className="whatsapp">

@@ -13,3 +13,9 @@ ROTAS / HEADER = HOME -> ABOUT -> TECHS -> PROJECTS
 () Estruturar e estilizar cada rota da pagina
 (- Arrumar BUG- ) Fazer a animação do useSpring do mouse com a pagina Home
 () Media Queries / Responsividade
+
+DISABLED button
+
+Link dentro do button
+    tentar colocar uma classe no link
+    ou tentar passar o link dentre ou fora de um botao

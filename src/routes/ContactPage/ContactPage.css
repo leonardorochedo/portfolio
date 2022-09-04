@@ -80,7 +80,8 @@
     resize: none;
 }
 
-button.inputButtons {
+button.inputButtons,
+button.enabled {
     background-color: blue;
     border: none;
 
@@ -90,12 +91,18 @@ button.inputButtons {
     transition: 0.5s;
 
     width: 20rem;
+
+    opacity: 1;
+
+    transition: 0.3s;
 }
 
-button.inputButtons:hover {
-    background: transparent;
+button.disabled {
+    cursor: initial;
+    background-color: #ff0000c4;
+    opacity: 0.75;
 
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 h2.tittle-form {
