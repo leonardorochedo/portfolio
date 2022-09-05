@@ -21,3 +21,18 @@ h1.title-projects {
 .btnProjects .button button {
     margin-top: -25rem;
 }
+
+@media (min-width: 1700px){
+    
+    .swiper {
+        background-color: rgba(52, 52, 52, 0.345);
+    
+        height: 60vh;
+    
+        border-radius: 100px;
+    }
+    
+    .btnProjects .button button {
+        margin-top: -32rem;
+    }
+}

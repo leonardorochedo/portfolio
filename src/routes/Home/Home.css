@@ -48,3 +48,30 @@ body {
         transform: rotate(330deg);
     }
 }
+
+@media (min-width: 1700px){
+    .container-home {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6rem;
+    }
+
+    .text .icons svg {
+        text-decoration: none;
+    
+        margin: 5rem 1rem 0 0;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .image {
+        touch-action: none; /* useSpring */
+    }
+    
+    .image img {
+        width: 40rem;
+        height: auto;
+        user-select: none; /* useSpring */
+    }
+
+}

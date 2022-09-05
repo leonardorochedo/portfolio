@@ -20,13 +20,14 @@ export function ContactPage() {
             console.log(result.text)
             navigate('/sucesso') // Navega para a /sucesso caso der certo
         }, (error) => {
-            alert(error.message);
+            alert("Email não enviado, verifique os dados e tente novamente!");
             console.log(error.text);
         });
         e.target.reset();
     }
 
     function toggleButton() {
+  
         const button = document.querySelector("#buttonForm");
 
         const messageValue = document.querySelector(".messageValue").value;
@@ -54,7 +55,7 @@ export function ContactPage() {
                     <input className='inputButtons' type="text" name='name' placeholder=' Nome' />
                     <input className='inputButtons' type="text" name='cel' placeholder=' Celular' />
                     <input className='inputButtons' type="email" name='email' placeholder=' Seu e-mail' />
-                    <textarea className='messageValue' name="message" placeholder=' Digite aqui sua mensagem...' onChange={setInterval(toggleButton, 500)} required></textarea>
+                    <textarea className='messageValue' name="message" placeholder=' Digite aqui sua mensagem...' onFocus={setInterval(toggleButton, 100)} required></textarea>
                     <button className='inputButtons' id="buttonForm" type='submit' >Enviar</button>
                 </form>
             </div>

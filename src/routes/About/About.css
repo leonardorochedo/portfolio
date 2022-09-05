@@ -35,3 +35,27 @@ div.about h2 {
 .btnAbout .button button {
     margin-top: -28rem;
 }
+
+@media (min-width: 1700px){
+    
+    img.perfil {
+        width: 18rem;
+    
+        /* border-radius: 50%; */
+        border: 2px solid transparent;
+        border-image: linear-gradient(48deg, rgba(224,255,0,1) 0%, rgba(225,251,3,1) 30%, rgba(0,14,255,1) 100%);
+        border-image-slice: 1;
+        padding: 0.25rem;
+
+        margin-top: -1rem;
+    }
+    
+    .btnAbout .button button {
+        margin-top: -34rem;
+    }
+
+    div.about h2 {
+        margin-top: 2rem;
+        font-weight: 500;
+    }
+}

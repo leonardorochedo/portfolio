@@ -75,3 +75,53 @@ a:hover span.menu::before  {
     width: calc( 180px / 2);
     height: calc( 50px / 2);
 }
+
+@media (min-width: 1700px){
+    header {
+        width: 100vw;
+        height: 13vh;
+    
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: -5rem;
+    }
+    
+    header.header-projects {
+        margin-bottom: 4rem;
+    }
+
+    header ul {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    header ul li {
+        list-style-type: none;
+        display: inline-block;
+    
+        margin: 0 6rem 0 6rem;
+    }
+    
+    header ul li.home,
+    header ul li.about,
+    header ul li.tec,
+    header ul li.proj,
+    header ul li a {
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 34px;
+    
+        margin-top: 4rem;
+        padding: 5px;
+    
+        color: aliceblue;
+        transition: 0.5s;
+    
+        transform: translate(-50%, -50%);
+    }
+}

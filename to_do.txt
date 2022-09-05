@@ -10,9 +10,9 @@ ROTAS / HEADER = HOME -> ABOUT -> TECHS -> PROJECTS
 (X) Arrumar modal e button da home
 (X) Fazer os rotas pelo RRD ou NextJS
 (X) Estruturar e estilizar cada rota da pagina
+(DELETADO) Fazer a animação do useSpring do mouse com a pagina Home
 
 () Media Queries / Responsividade
-(- Arrumar BUG- ) Fazer a animação do useSpring do mouse com a pagina Home
 
 
 Mais pra frente

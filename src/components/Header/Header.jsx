@@ -6,7 +6,7 @@ import './Header.css'
 
 export function Header() {
     return (
-        <header>
+        <header className='header-projects'>
             <ul>
                 <li className='home'><Link to="/"><span className='menu'></span><a className='menu'>ÍNICIO</a></Link></li>
                 <li className='about'><Link to="/sobre"><span className='menu'></span><a className='menu'>SOBRE MIM</a></Link></li>

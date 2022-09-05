@@ -46,7 +46,7 @@ export function Projects() {
 
     const countdown = {
         title: "Countdown",
-        text: "Desafio de fazer uma contagem regressiva, implementei também umas animações e umas modais",
+        text: "Desafio de fazer uma contagem regressiva, implementei também umas animações e modais",
         link: "https://github.com/leonardorochedo/Countdown",
         background: "src/assets/countdown.png"
     }
@@ -72,13 +72,12 @@ export function Projects() {
             <Header />
         </div>
         <div className="container projects">
-            {/* <h1 className='title-projects'>Alguns projetos...</h1> */}
             <div className="swiper">
             <Swiper
                 modules={[Pagination, A11y]}
                 spaceBetween={100}
                 slidesPerView={1}
-                pagination={{ clickable: true }}
+                pagination={{ clickable: true, dynamicBullets: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >

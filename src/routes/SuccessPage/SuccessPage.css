@@ -11,3 +11,10 @@
 .success img {
     width: 13rem;
 }
+
+@media (min-width: 1700px){
+    .success img {
+        margin-top: 5rem;
+        width: 20rem;
+    }
+}

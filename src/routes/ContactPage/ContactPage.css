@@ -108,3 +108,99 @@ button.disabled {
 h2.tittle-form {
     font-size: 28px;
 }
+
+@media (min-width: 1700px){
+    
+    .container .whatsapp {
+        margin-top: 5rem;
+    
+        width: 38rem;
+        height: 35rem;
+    
+        border-radius: 10px;
+        background-color: rgb(0 0 0 / 87%);
+        text-align-last: center;
+    }
+    
+    .container .whatsapp h2 {
+        margin: 3rem 0 4.5rem 0;
+    }
+    
+    .container .whatsapp p {
+        margin-top: 1rem;
+    }
+
+    .container .whatsapp img {
+        width: 15rem;
+    }
+    
+    .form {
+        width: 35rem;
+        margin-top: -6rem;
+    }
+    
+    .form form {
+        display: flex;
+        flex-direction: column;
+    
+        /* width: 20rem; */
+        /* height: 20rem; */
+    
+        border: none;
+    
+    }
+    
+    .form form .inputButtons {
+        border-radius: 5px;
+    
+        margin-top: 3rem;
+    
+        font-family: 'Poppins', Times, serif;
+        font-weight: 400;
+        font-size: 26px;
+    
+        height: 5rem;
+    }
+    
+    .form form textarea {
+        border-radius: 5px;
+    
+        margin-top: 3rem;
+    
+        font-family: 'Poppins', Times, serif;
+        font-weight: 400;
+        font-size: 26px;
+    
+        height: 10rem;
+        resize: none;
+    }
+    
+    button.inputButtons,
+    button.enabled {
+        background-color: blue;
+        border: none;
+    
+        color: white;
+    
+        cursor: pointer;
+        transition: 0.5s;
+    
+        width: 35rem;
+    
+        opacity: 1;
+    
+        transition: 0.3s;
+    }
+    
+    button.disabled {
+        cursor: initial;
+        background-color: #ff0000c4;
+        opacity: 0.75;
+    
+        transition: 0.3s;
+    }
+    
+    h2.tittle-form {
+        font-size: 38px;
+    }
+}
