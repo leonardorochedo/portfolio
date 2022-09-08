@@ -14,6 +14,9 @@ ROTAS / HEADER = HOME -> ABOUT -> TECHS -> PROJECTS
 
 () Media Queries / Responsividade
 
+(X) FHD
 
-Mais pra frente
-Adicionar icones de linguagem usadas nos projects
+Celular
+(X) Home
+() Header
+() Contact

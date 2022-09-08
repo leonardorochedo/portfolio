@@ -59,3 +59,17 @@ div.about h2 {
         font-weight: 500;
     }
 }
+
+@media (max-width: 1100px){
+    
+    img.perfil {
+        width: 13rem;
+
+        margin-top: -1rem;
+    }
+    
+    .btnAbout .button button {
+        margin-top: -27rem;
+    }
+
+}

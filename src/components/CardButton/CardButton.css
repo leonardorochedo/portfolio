@@ -36,3 +36,15 @@
     }
 
 }
+
+@media (max-width: 1100px){
+      
+    .front,
+    .back {
+        background-size: 11rem;
+        background-repeat: no-repeat;
+    
+        margin: 5rem 1rem; /* Centralizando */
+    }
+
+}

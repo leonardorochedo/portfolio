@@ -36,3 +36,9 @@ h1.title-projects {
         margin-top: -32rem;
     }
 }
+
+@media (min-width: 1400px){
+    .btnProjects .button button {
+        margin-top: -30rem;
+    }
+}

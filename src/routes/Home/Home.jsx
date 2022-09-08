@@ -6,22 +6,22 @@ import { Waves } from "../../../src/components/Waves/Waves";
 import { Contact } from "../../../src/components/Contact/Contact";
 
 // Libs
-import { useSpring, animated } from 'react-spring';
-import { useDrag } from '@use-gesture/react';
+//import { useSpring, animated } from 'react-spring';
+//import { useDrag } from '@use-gesture/react';
 
 import './Home.css';
 
 export function Home() {
 
-    const imagePos = useSpring({ x: 0, y: 0 });
+    // const imagePos = useSpring({ x: 0, y: 0 });
 
-    const bindLogoPos = useDrag((params) => {
-        imagePos.x.set(params.offset[0]);
-        imagePos.y.set(params.offset[1]);
-    });
+    // const bindLogoPos = useDrag((params) => {
+    //     imagePos.x.set(params.offset[0]);
+    //     imagePos.y.set(params.offset[1]);
+    // });
 
     return (
-        <div className='container'>
+        <div className='container headerHome'>
             <Header />
         <div className='container-home'>
             <div className="text">

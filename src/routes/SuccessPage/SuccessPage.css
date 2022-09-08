@@ -18,3 +18,9 @@
         width: 20rem;
     }
 }
+
+@media (max-width: 1100px){
+    .success img {
+        margin-top: 5rem;
+    }
+}
