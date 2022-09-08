@@ -134,7 +134,7 @@ a:hover span.menu::before  {
 
 @media (min-width: 1400px){
     header {
-        margin: 1.5rem 0 3rem 0;
+        margin: 0 0 1rem 0;
     }
 }
 

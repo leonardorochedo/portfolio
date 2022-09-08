@@ -6,11 +6,11 @@ Seja bem-vindo(a) ao meu Portfólio, feito com ReactJS algumas coisas interessan
 
 Utilizei nesse projeto tecnologias como ⚛️
 
-ReactJS
-React Router Dom
-SwiperJS
-EmailJS
-UseSpring
+ReactJS<br>
+React Router Dom<br>
+SwiperJS<br>
+EmailJS<br>
+UseSpring<br>
 
 Entre outros hooks dispóniveis..
 

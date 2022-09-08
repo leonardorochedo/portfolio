@@ -14,8 +14,6 @@ ROTAS / HEADER = HOME -> ABOUT -> TECHS -> PROJECTS
 
 () Media Queries / Responsividade
 
-(X) FHD
-
 Celular
 (X) Home
 () Header
