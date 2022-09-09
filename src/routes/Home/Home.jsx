@@ -34,7 +34,7 @@ export function Home() {
                 </div>
             </div>
             <div className="image">
-                <img src="src\assets\coding.png" alt="Homem sentado usando o computador" />
+                <img src="src\static\coding.png" alt="Homem sentado usando o computador" />
             </div>
             <Waves />
             <Contact />
