@@ -10,3 +10,9 @@
 .btn .button button {
     margin: -14rem 0 0 0;
 }
+
+@media (max-width: 430px) {
+    .btn .button button {
+        display: none;
+    }
+}

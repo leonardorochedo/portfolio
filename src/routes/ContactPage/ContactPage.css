@@ -216,3 +216,22 @@ h2.tittle-form {
     }
     
 }
+
+@media (max-width: 430px){
+
+    .container .whatsapp h2 {
+        margin-top: 3rem;
+    }
+
+    .container .whatsapp {
+        margin-top: 4rem;
+
+        width: 90vw;
+        height: 23rem;
+    }
+    
+    .form {
+        margin-top: 0rem;
+    }
+
+}

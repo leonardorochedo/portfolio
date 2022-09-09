@@ -57,3 +57,33 @@ div.project-card {
     }
 
 }
+
+@media (max-width: 430px){
+    
+    div.project-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        height: 100vh;
+    
+        background-color: rgba(52, 52, 52, 0.345);
+    
+        border: none;
+    }
+    
+    .project-card .text-card {
+        margin: -3rem 1rem 1rem 1rem;
+    }
+    
+    .project-card .text-card p {
+        margin-top: 1rem;
+    }
+    
+    
+    .project-card img {
+        height: 70vh;
+        width: 50rem;
+    }
+    
+}

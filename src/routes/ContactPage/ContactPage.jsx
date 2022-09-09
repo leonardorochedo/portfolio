@@ -32,15 +32,15 @@ export function ContactPage() {
 
         const messageValue = document.querySelector(".messageValue").value;
 
-        // if (messageValue != null && messageValue != "" && messageValue != undefined) {
-        //     button.disabled = false;
-        //     button.classList.remove("disabled")
-        //     button.classList.add("enabled")
-        // } else {
-        //     button.disabled = true;
-        //     button.classList.remove("enabled")
-        //     button.classList.add("disabled")
-        // }
+        if (messageValue != null && messageValue != "" && messageValue != undefined) {
+            button.disabled = false;
+            button.classList.remove("disabled")
+            button.classList.add("enabled")
+        } else {
+            button.disabled = true;
+            button.classList.remove("enabled")
+            button.classList.add("disabled")
+        }
     }
 
     return (

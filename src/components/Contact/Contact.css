@@ -39,6 +39,8 @@
     }
     
     .button button {
+        margin-top: 7rem;
+
         width: 15rem;
         height: 5rem;
         border: none;

@@ -95,6 +95,10 @@ p {
 
 @media (max-width: 430px){
 
+  html {
+    overflow-y: auto;
+  }
+
   .container {
     display: flex;
     flex-direction: column;

@@ -50,12 +50,16 @@ body {
 }
 
 @media (min-width: 1700px){
+
     .container-home {
         display: flex;
         justify-content: space-between;
         margin-top: 6rem;
     }
 
+    .text {
+        margin-bottom: 50rem;
+    }
 
     .text .icons svg {
         text-decoration: none;
