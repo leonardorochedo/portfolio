@@ -13,7 +13,7 @@ export function ContactPage() {
     const navigate = useNavigate()
 
     function sendEmail(e) { // function emailJS
-        //e.preventDefault();
+        e.preventDefault();
 
         emailjs.sendForm('service_hbzvywk', 'template_fqpmqda', e.target, 'uBtKO-dBql1FyAWVL')
         .then((result) => {
@@ -27,9 +27,8 @@ export function ContactPage() {
     }
 
     function toggleButton() {
-  
-        const button = document.querySelector("#buttonForm");
 
+        const button = document.querySelector("#buttonForm");
         const messageValue = document.querySelector(".messageValue").value;
 
         if (messageValue != null && messageValue != "" && messageValue != undefined) {
@@ -41,6 +40,7 @@ export function ContactPage() {
             button.classList.remove("enabled")
             button.classList.add("disabled")
         }
+        
     }
 
     return (
@@ -52,7 +52,7 @@ export function ContactPage() {
             <div className="form">
             <h2 className='tittle-form'>Me mande um <i>E-mail!</i></h2>
                 <form onSubmit={sendEmail}>
-                    <input className='inputButtons' type="text" name='name' placeholder=' Nome' />
+                    <input autoFocus className='inputButtons' type="text" name='name' placeholder=' Nome' />
                     <input className='inputButtons' type="text" name='cel' placeholder=' Celular' />
                     <input className='inputButtons' type="email" name='email' placeholder=' Seu e-mail' />
                     <textarea className='messageValue' name="message" placeholder=' Digite aqui sua mensagem...' onFocus={setInterval(toggleButton, 100)} required></textarea>
