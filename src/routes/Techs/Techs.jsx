@@ -15,16 +15,17 @@ import jsImg from '../../assets/js-icon.png'
 import mysqlImg from '../../assets/mysql-icon.png'
 
 export function Techs() {
+
     return (
         <>
         <div className="container">
             <Header />
         </div>
         <div className="container techs">
-            <CardButton name="React" class="c front react" style={{ backgroundImage: `url(${reactImg})`}}/>
-            <CardButton name="TypeScript" class="c front typescript" style={{ backgroundImage: `url(${tsImg})`}}/>
-            <CardButton name="JavaScript" class="c front javascript" style={{ backgroundImage: `url(${jsImg})`}}/>
-            <CardButton name="MySQL" class="c front mysql" style={{ backgroundImage: `url(${mysqlImg})`}}/>
+            <CardButton name="React" class="c front react" style={reactImg}/>
+            <CardButton name="TypeScript" class="c front typescript" style={tsImg}/>
+            <CardButton name="JavaScript" class="c front javascript" style={jsImg}/>
+            <CardButton name="MySQL" class="c front mysql" style={mysqlImg}/>
             <Waves />
             <div className="btnTech">
                 <Contact />
