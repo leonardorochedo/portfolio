@@ -1,11 +1,5 @@
 {
     "routes": [
-      { "src": "/", "dest": "/" },
-      { "src": "/sobre", "dest": "/" },
-      { "src": "/tecnologias", "dest": "/" },
-      { "src": "/projetos", "dest": "/" },
-      { "src": "/contato", "dest": "/" },
-      { "src": "/sucesso", "dest": "/" },
-      { "src": "/(.*)", "dest": "/" }
+      { "src": "/[^.]+", "dest": "/", "status": 200 }
     ]
   }
