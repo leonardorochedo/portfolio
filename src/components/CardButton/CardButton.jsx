@@ -4,6 +4,9 @@ import { useSpring, animated as a } from 'react-spring';
 
 import './CardButton.css'
 
+// Imagens
+import interrogationImg from '../../assets/interrogation.png'
+
 export function CardButton(props) {
 
     const [count, setCount] = useState(1)
@@ -37,7 +40,7 @@ export function CardButton(props) {
     <>
     <div className="card" onClick={Flipped}>
                 <h2 id="change-opacity" ref={h2Text}>{h2TextValue}</h2>
-                <a.div class="c back" style={{ opacity: opacity.interpolate((o) => 1 - o), transform }} />
+                <a.div class="c back" style={{ backgroundImage: `url(${interrogationImg})`, opacity: opacity.interpolate((o) => 1 - o), transform }} />
                 <a.div class={props.class} style={{ opacity, transform: transform.interpolate((t) => `${t} rotateX(180deg)`) }} />
     </div>
     </>
