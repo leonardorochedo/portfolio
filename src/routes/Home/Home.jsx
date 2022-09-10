@@ -5,6 +5,9 @@ import { Header } from '../../../src/components/Header/Header';
 import { Waves } from "../../../src/components/Waves/Waves";
 import { Contact } from "../../../src/components/Contact/Contact";
 
+// Imagens
+import menCoding from '../../assets/coding.png'
+
 // Libs
 //import { useSpring, animated } from 'react-spring';
 //import { useDrag } from '@use-gesture/react';
@@ -34,7 +37,7 @@ export function Home() {
                 </div>
             </div>
             <div className="image">
-                <img src="src\assets\coding.png" alt="Homem sentado usando o computador" />
+                <img src={menCoding} alt="Homem sentado usando o computador" />
             </div>
             <Waves />
             <Contact />
