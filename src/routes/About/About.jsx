@@ -7,6 +7,9 @@ import { Header } from '../../../src/components/Header/Header';
 import { Waves } from "../../../src/components/Waves/Waves";
 import { Contact } from "../../../src/components/Contact/Contact";
 
+// Imagens
+import perfilImg from '../../assets/perfil.jpg'
+
 export function About() {
 
     const atualYear = new Date().getFullYear()
@@ -17,7 +20,7 @@ export function About() {
         <div className="container about">
             <Header />
             <div className='imageAbout'>
-                <img className='perfil' src="src\assets\perfil.jpg" alt="Foto de perfil" />
+                <img className='perfil' src={perfilImg} alt="Foto de perfil" />
             </div>
             <div className="textAbout">
                 <h2>Me chamo Leonardo atualmente tenho {myAge} anos e estou cursando TADS no IFPR de Londrina, sempre fui apaixonado por tecnologia desde pequeno e esse lado meu só cresce!

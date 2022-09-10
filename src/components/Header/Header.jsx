@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
+// Imagens
+import arrowClose from '../../assets/close-nav.svg'
+import arrowOpen from '../../assets/open-nav.svg'
+
 import './Header.css'
 
 export function Header() {
@@ -12,9 +16,9 @@ export function Header() {
 
     // Alterar o nav icon
     if (count % 2 == 0) {
-        navImage = "src/assets/close-nav.svg"
+        navImage = arrowClose
     } else {
-        navImage = "src/assets/open-nav.svg"
+        navImage = arrowOpen
     }
 
     function openModal() {

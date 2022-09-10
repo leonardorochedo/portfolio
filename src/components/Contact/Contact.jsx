@@ -2,6 +2,9 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
+// Imagens
+import planePaper from '../../assets/send.svg'
+
 import './Contact.css';
 
 export function Contact() {
@@ -9,7 +12,7 @@ export function Contact() {
     return (
         <>
         <div className="button">
-            <Link to="/contato" style={{textDecoration: 'none'}}><button><img src="src\assets\send.svg" alt="Aviao de papel voando" />Contato</button></Link>
+            <Link to="/contato" style={{textDecoration: 'none'}}><button><img src={planePaper} alt="Aviao de papel voando" />Contato</button></Link>
         </div>
         </>
     );
