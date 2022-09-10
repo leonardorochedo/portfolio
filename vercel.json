@@ -1,11 +1,11 @@
 {
     "routes": [
       { "src": "/", "dest": "/" },
-      { "src": "/sobre", "dest": "/sobre" },
-      { "src": "/tecnologias", "dest": "/tecnologias" },
-      { "src": "/projetos", "dest": "/projetos" },
-      { "src": "/contato", "dest": "/contato" },
-      { "src": "/sucesso", "dest": "/sucesso" },
+      { "src": "/sobre", "dest": "/" },
+      { "src": "/tecnologias", "dest": "/" },
+      { "src": "/projetos", "dest": "/" },
+      { "src": "/contato", "dest": "/" },
+      { "src": "/sucesso", "dest": "/" },
       { "src": "/(.*)", "dest": "/" }
     ]
   }
