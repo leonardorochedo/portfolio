@@ -1,6 +1,10 @@
 {
     "routes": [
       { "src": "/", "dest": "/" },
+      { "src": "/sobre", "dest": "/sobre" },
+      { "src": "/tecnologias", "dest": "/tecnologias" },
+      { "src": "/projetos", "dest": "/projetos" },
+      { "src": "/contato", "dest": "/contato" },
       { "src": "/sucesso", "dest": "/sucesso" },
       { "src": "/(.*)", "dest": "/" }
     ]
