@@ -28,6 +28,7 @@ export function ContactPage() {
 
     function toggleButton() {
 
+        //console.log(req.path);
         const button = document.querySelector("#buttonForm");
         const messageValue = document.querySelector(".messageValue").value;
 
