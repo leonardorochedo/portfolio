@@ -3,7 +3,7 @@
     max-width: 500px;
     max-height: 500px;
     width: 50ch;
-    height: 50ch;
+    height: 25ch; /* Aréa que faz o turn */
     cursor: pointer;
     will-change: transform, opacity;
 }
@@ -26,7 +26,11 @@
 }
 
 @media (min-width: 1700px){
-      
+    
+    .c {
+        height: 45ch;
+    }
+
     .front,
     .back {
         background-size: 17rem;
@@ -45,6 +49,23 @@
         background-repeat: no-repeat;
     
         margin: 5rem 1rem; /* Centralizando */
+    }
+
+}
+
+@media (max-width: 430px){
+
+    .c {
+        width: 50vw;
+        height: 20ch;
+    }
+      
+    .front,
+    .back {
+        background-size: 10rem;
+        background-repeat: no-repeat;
+    
+        margin: 4rem 1.5rem; /* Centralizando */
     }
 
 }
