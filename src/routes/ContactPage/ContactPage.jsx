@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import emailjs from 'emailjs-com';
 import { useNavigate } from "react-router-dom";
@@ -10,6 +10,7 @@ import './ContactPage.css';
 
 export function ContactPage() {
 
+    const [message, setMessage] = useState("")
     const navigate = useNavigate()
 
     function sendEmail(e) { // function emailJS
@@ -26,23 +27,20 @@ export function ContactPage() {
         e.target.reset();
     }
 
-    function toggleButton() {
-
-        //console.log(req.path);
+    // Desabilitar e habilitar o botão
+    useEffect(() => {
         const button = document.querySelector("#buttonForm");
-        const messageValue = document.querySelector(".messageValue").value;
 
-        if (messageValue != null && messageValue != "" && messageValue != undefined) {
-            button.disabled = false;
-            button.classList.remove("disabled")
-            button.classList.add("enabled")
-        } else {
-            button.disabled = true;
-            button.classList.remove("enabled")
-            button.classList.add("disabled")
-        }
-        
-    }
+            if (message != "") {
+                button.disabled = false;
+                button.classList.remove("disabled")
+                button.classList.add("enabled")
+            } else {
+                button.disabled = true;
+                button.classList.remove("enabled")
+                button.classList.add("disabled")
+            }
+    }, [message])
 
     return (
         <>
@@ -56,7 +54,7 @@ export function ContactPage() {
                     <input autoFocus className='inputButtons' type="text" name='name' placeholder=' Nome' />
                     <input className='inputButtons' type="text" name='cel' placeholder=' Celular' />
                     <input className='inputButtons' type="email" name='email' placeholder=' Seu e-mail' />
-                    <textarea className='messageValue' name="message" placeholder=' Digite aqui sua mensagem...' onFocus={setInterval(toggleButton, 100)} required></textarea>
+                    <textarea className='messageValue' name="message" placeholder=' Digite aqui sua mensagem...' value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
                     <button className='inputButtons' id="buttonForm" type='submit' >Enviar</button>
                 </form>
             </div>
