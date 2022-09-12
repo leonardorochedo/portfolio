@@ -1,10 +1,11 @@
 import React from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, A11y } from 'swiper';
+import { Pagination, Navigation, A11y } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 import './Projects.css';
 
@@ -83,9 +84,10 @@ export function Projects() {
         <div className="container projects">
             <div className="swiper">
             <Swiper
-                modules={[Pagination, A11y]}
+                modules={[Pagination, Navigation, A11y]}
                 spaceBetween={100}
                 slidesPerView={1}
+                navigation={true}
                 pagination={{ clickable: true, dynamicBullets: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
