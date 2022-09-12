@@ -90,12 +90,12 @@ export function Projects() {
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
+                <SwiperSlide><ProjectCard title={rocketcard.title} text={rocketcard.text} link={rocketcard.link} image={rocketcard.background}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={countdown.title} text={countdown.text} link={countdown.link} image={countdown.background}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={listapresenca.title} text={listapresenca.text} link={listapresenca.link} image={listapresenca.background}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={nlwImpulse.title} text={nlwImpulse.text} link={nlwImpulse.link} image={nlwImpulse.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={fotonovo.title} text={fotonovo.text} link={fotonovo.link} image={fotonovo.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={jta.title} text={jta.text} link={jta.link} image={jta.background}/></SwiperSlide>
-                <SwiperSlide><ProjectCard title={rocketcard.title} text={rocketcard.text} link={rocketcard.link} image={rocketcard.background}/></SwiperSlide>
-                <SwiperSlide><ProjectCard title={listapresenca.title} text={listapresenca.text} link={listapresenca.link} image={listapresenca.background}/></SwiperSlide>
-                <SwiperSlide><ProjectCard title={countdown.title} text={countdown.text} link={countdown.link} image={countdown.background}/></SwiperSlide>
-                <SwiperSlide><ProjectCard title={nlwImpulse.title} text={nlwImpulse.text} link={nlwImpulse.link} image={nlwImpulse.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={inProgress.title} text={inProgress.text} link={inProgress.link} image={inProgress.background}/></SwiperSlide>
             </Swiper>
             </div>    
