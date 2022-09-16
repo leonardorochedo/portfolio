@@ -1,11 +1,10 @@
 import React from 'react';
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Navigation, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, A11y } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 
 import './Projects.css';
 
@@ -13,18 +12,26 @@ import './Projects.css';
 import { Header } from '../../../src/components/Header/Header';
 import { Waves } from "../../../src/components/Waves/Waves";
 import { Contact } from "../../../src/components/Contact/Contact";
-import { ProjectCard } from "../../../src/components/ProjectCard/ProjectCard"
+import { ProjectCard } from "../../../src/components/ProjectCard/ProjectCard";
 
 // Imagens
-import backFotonovo from '../../assets/fotonovo.png'
-import backJta from '../../assets/jta.png'
-import backRocketcard from '../../assets/rocketcard.png'
-import backListPresen from '../../assets/listapresenca.png'
-import backCountdown from '../../assets/countdown.png'
-import backImpulse from '../../assets/nlwimpulse.png'
-import backProgess from '../../assets/inprogress.png'
+import backFotonovo from '../../assets/fotonovo.png';
+import backJta from '../../assets/jta.png';
+import backRocketcard from '../../assets/rocketcard.png';
+import backListPresen from '../../assets/listapresenca.png';
+import backCountdown from '../../assets/countdown.png';
+import backImpulse from '../../assets/nlwimpulse.png';
+import backProgess from '../../assets/inprogress.png';
+import backSunrain from '../../assets/sunrain.png';
 
 export function Projects() {
+
+    const sunrain = {
+        title: "Sunrain",
+        text: "Consulte a previsão do tempo atual apenas com o nome da cidade!",
+        link: "https://sunrain.vercel.app/",
+        background: backSunrain
+    }
 
     const fotonovo = {
         title: "Foto Novo",
@@ -84,14 +91,14 @@ export function Projects() {
         <div className="container projects">
             <div className="swiper">
             <Swiper
-                modules={[Pagination, Navigation, A11y]}
+                modules={[Pagination, A11y]}
                 spaceBetween={100}
                 slidesPerView={1}
-                navigation={true}
                 pagination={{ clickable: true, dynamicBullets: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
+                <SwiperSlide><ProjectCard title={sunrain.title} text={sunrain.text} link={sunrain.link} image={sunrain.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={rocketcard.title} text={rocketcard.text} link={rocketcard.link} image={rocketcard.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={countdown.title} text={countdown.text} link={countdown.link} image={countdown.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={listapresenca.title} text={listapresenca.text} link={listapresenca.link} image={listapresenca.background}/></SwiperSlide>
