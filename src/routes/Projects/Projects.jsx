@@ -23,8 +23,16 @@ import backCountdown from '../../assets/countdown.png';
 import backImpulse from '../../assets/nlwimpulse.png';
 import backProgess from '../../assets/inprogress.png';
 import backSunrain from '../../assets/sunrain.png';
+import backPokedex from '../../assets/pokedex.png';
 
 export function Projects() {
+
+    const pokedex = {
+        title: "Pokédex",
+        text: "Pesquise sobre seu Pokémon preferido e veja sua descrição e poder!",
+        link: "https://pokedex-seven-drab.vercel.app/",
+        background: backPokedex
+    }
 
     const sunrain = {
         title: "Sunrain",
@@ -98,6 +106,7 @@ export function Projects() {
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
+                <SwiperSlide><ProjectCard title={pokedex.title} text={pokedex.text} link={pokedex.link} image={pokedex.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={sunrain.title} text={sunrain.text} link={sunrain.link} image={sunrain.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={rocketcard.title} text={rocketcard.text} link={rocketcard.link} image={rocketcard.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={countdown.title} text={countdown.text} link={countdown.link} image={countdown.background}/></SwiperSlide>

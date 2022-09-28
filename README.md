@@ -19,10 +19,12 @@ Aprendi bastante coisa com esse projeto, tecnologias, bibliotecas e uns hooks qu
 Utilizei nesse projeto tecnologias como ⚛️
 
 ReactJS<br>
-React Router Dom<br>
+React-Router-Dom<br>
+React-Parallax-Tilt<br>
 SwiperJS<br>
 EmailJS<br>
 UseSpring<br>
 
 Para visita-lo acesse: www.leonardorochedo.com.br
+
 </div>

@@ -1,8 +1,8 @@
 .c {
     position: absolute;
-    max-width: 500px;
-    max-height: 500px;
-    width: 50ch;
+    /* max-width: 500px; */
+    /* max-height: 500px; */
+    width: 28ch;
     height: 25ch; /* Aréa que faz o turn */
     cursor: pointer;
     will-change: transform, opacity;
@@ -28,7 +28,8 @@
 @media (min-width: 1700px){
     
     .c {
-        height: 45ch;
+        width: 20rem;
+        height: 35ch;
     }
 
     .front,
@@ -56,7 +57,7 @@
 @media (max-width: 430px){
 
     .c {
-        width: 50vw;
+        width: 40vw;
         height: 20ch;
     }
       

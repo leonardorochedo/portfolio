@@ -83,7 +83,7 @@ div.project-card {
     
     .project-card img {
         height: 70vh;
-        width: 50rem;
+        width: fit-content;
     }
     
 }

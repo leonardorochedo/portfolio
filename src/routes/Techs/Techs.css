@@ -1,25 +1,9 @@
 .techs {
     display: flex;
     justify-content: space-between;
+
+    overflow: hidden;
 }
-
-/* Background animation */
-/* .react {
-    background-image: url(src/assets/react-icon.png);
-}
-
-.typescript {
-    background-image: url(src/assets/type-icon.png);
-}
-
-.javascript {
-    background-image: url(src/assets/js-icon.png);
-}
-
-.mysql {
-    background-image: url(src/assets/mysql-icon.png);
-} */
-
 
 /* Botão */
 .btnTech {
@@ -32,12 +16,13 @@
 
 /* Cards */
 .card {
-    margin-top: 5rem;
+    padding: .75rem 0;
+
+    cursor: pointer;
 
     width: 15rem;
     height: 25rem;
 
-    /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
     text-align-last: center;
 
     background-color: rgba(15, 15, 15, 0.908);
@@ -47,8 +32,9 @@
     justify-content: center;
 }
 
-.card h2 {
-    margin-top: 2rem;
+/* Tilt-Card */
+.tilt-card {
+    margin-top: 5rem;
 }
 
 @media (min-width: 1700px){
@@ -59,23 +45,16 @@
     
     /* Cards */
     .card {
-        margin-top: 4rem;
-    
+        padding: .25rem 0;
+        margin-top: 1rem;
         width: 20rem;
         height: 35rem;
-    
-        /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
-        text-align-last: center;
-    
-        background-color: rgba(15, 15, 15, 0.908);
-        border-radius: 50px;
-    
-        align-items: center;
-        justify-content: center;
     }
-    
-    .card h2 {
-        margin-top: 3rem;
+
+    .tilt-card {
+        margin-top: 1rem;
+
+        width: 20rem;
     }
     
 }
@@ -92,13 +71,27 @@
         width: 13rem;
         height: 25rem;
     }
-    
-    .card h2 {
-        margin-top: 3rem;
+
+    .tilt-card {
+        margin-top: 1rem;
+
+        width: 13rem;
     }
 
     .btnTech .button button {
         margin-top: 3rem;
+    }
+
+}
+
+@media (max-width: 430px){
+    
+    .card {
+        padding: .05rem 0;
+    }
+
+    .tilt-card {
+        margin-top: 1rem;
     }
 
 }
