@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+import Fade from 'react-reveal/Fade';
 import emailjs from 'emailjs-com';
+
 import { useNavigate } from "react-router-dom";
 
 import { Header } from '../../components/Header/Header';
@@ -48,6 +50,7 @@ export function ContactPage() {
             <Header />
         </div>
         <div className="container contact">
+            <Fade>
             <div className="form">
             <h2 className='tittle-form'>Me mande um <i>E-mail!</i></h2>
                 <form onSubmit={sendEmail}>
@@ -65,6 +68,7 @@ export function ContactPage() {
                 </a>
                 <p>escaneie ou clique</p>
             </div>
+            </Fade>
             <Waves />
         </div>
         </>

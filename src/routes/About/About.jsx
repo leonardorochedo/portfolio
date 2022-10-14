@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Fade from 'react-reveal/Fade';
+
 import './About.css';
 
 // Componentes
@@ -19,6 +21,7 @@ export function About() {
     return (
         <div className="container about">
             <Header />
+                <Fade>
             <div className='imageAbout'>
                 <img className='perfil' src={perfilImg} alt="Foto de perfil" />
             </div>
@@ -29,6 +32,7 @@ export function About() {
                 Estou focando meus estudos atualmente voltado para o <i>Desenvolvimento Web Front End</i> e estou gostando muito, porém não me prendo nisso e quero a cada dia aprender novas coisas.
                 </h2>
             </div>
+                </Fade>
             <Waves />
             <div className="btnAbout">
                 <Contact className="buttonAbout" />

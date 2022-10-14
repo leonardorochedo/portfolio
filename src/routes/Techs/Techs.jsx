@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Tilt from 'react-parallax-tilt';
+import Fade from 'react-reveal/Fade';
+
 
 import './Techs.css';
 
@@ -24,26 +26,28 @@ export function Techs() {
             <Header />
         </div>
         <div className="container techs">
+            <Fade>
             <div className="tilt-card">
-                <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.1' glareBorderRadius='50px'>
+                <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
                     <CardButton name="React" class="c front react" style={reactImg}/>
                 </Tilt>
             </div>
             <div className="tilt-card">
-                <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.1' glareBorderRadius='50px'>
+                <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
                     <CardButton name="TypeScript" class="c front typescript" style={tsImg}/>
                 </Tilt>
             </div>
             <div className="tilt-card">
-                <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.1' glareBorderRadius='50px'>
+                <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
                     <CardButton name="JavaScript" class="c front javascript" style={jsImg}/>
                 </Tilt>
             </div>
             <div className="tilt-card">
-                <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.1' glareBorderRadius='50px'>
+                <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
                     <CardButton name="MySQL" class="c front mysql" style={mysqlImg}/>
                 </Tilt>
-            </div>        
+            </div>       
+            </Fade> 
             <Waves />
             <div className="btnTech">
                 <Contact />

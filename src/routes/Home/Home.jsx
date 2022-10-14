@@ -1,4 +1,6 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
+
 
 // Componentes
 import { Header } from '../../../src/components/Header/Header';
@@ -24,9 +26,11 @@ export function Home() {
     // });
 
     return (
+        <>
         <div className='container headerHome'>
             <Header />
         <div className='container-home'>
+            <Fade>
             <div className="text">
                 <h1>Olá! Me chamo Leonardo. Prazer <span>👋</span></h1>
                 <h2>Desenvolvedor Front End</h2>
@@ -39,9 +43,11 @@ export function Home() {
             <div className="image">
                 <img src={menCoding} alt="Homem sentado usando o computador" />
             </div>
+            </Fade>
             <Waves />
             <Contact />
         </div>
         </div>
+        </>
     );
 }

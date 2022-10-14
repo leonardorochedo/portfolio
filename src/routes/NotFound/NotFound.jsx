@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 // Componentes
 import { Header } from '../../../src/components/Header/Header';
@@ -12,9 +13,11 @@ export function NotFound() {
         <div className="container">
             <Header />
             <div className="notfound">
+                <Fade>
                 <h1>Ops... 🚧</h1>
                 <h2>Parece que você digitou algo incorretamente</h2>
                 <p><i>Volte para a navegação pelo menu acima 😁</i></p>
+                </Fade>
             </div>
             <Waves />
             <div className="btn">

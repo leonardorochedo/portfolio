@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Fade from 'react-reveal/Fade';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, A11y } from 'swiper';
 
@@ -98,6 +100,7 @@ export function Projects() {
         </div>
         <div className="container projects">
             <div className="swiper">
+            <Fade>
             <Swiper
                 modules={[Pagination, A11y]}
                 spaceBetween={100}
@@ -116,6 +119,7 @@ export function Projects() {
                 <SwiperSlide><ProjectCard title={jta.title} text={jta.text} link={jta.link} image={jta.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={inProgress.title} text={inProgress.text} link={inProgress.link} image={inProgress.background}/></SwiperSlide>
             </Swiper>
+            </Fade>
             </div>    
             <Waves />
             <div className="btnProjects">
