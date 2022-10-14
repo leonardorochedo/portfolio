@@ -53,32 +53,6 @@ p {
     margin: 0 10rem;
   }
 
-  h1 {
-    font-family: 'Roboto', Times, serif;
-    font-weight: bold;
-    font-size: 54px;
-    color: white;
-    mix-blend-mode: exclusion;
-  }
-
-  h2 {
-    font-family: 'Poppins', Times, serif;
-    font-weight: 600;
-    font-size: 36px;
-    color: white;
-  
-    margin-top: 5rem;
-    mix-blend-mode: exclusion;
-  }
-  
-  p {
-    font-family: 'Poppins', Times, serif;
-    font-weight: 400;
-    font-size: 30px;
-    color: white;
-    mix-blend-mode: exclusion;
-  }
-
 }
 
 @media (max-width: 1100px){

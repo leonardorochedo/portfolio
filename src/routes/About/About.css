@@ -39,7 +39,7 @@ div.about h2 {
 @media (min-width: 1700px){
     
     img.perfil {
-        width: 18rem;
+        width: 16rem;
     
         /* border-radius: 50%; */
         border: 2px solid transparent;
@@ -51,11 +51,11 @@ div.about h2 {
     }
     
     .btnAbout .button button {
-        margin-top: -34rem;
+        margin-top: -28rem;
     }
 
     div.about h2 {
-        margin-top: 2rem;
+        margin-top: 4rem;
         font-weight: 500;
     }
 }
