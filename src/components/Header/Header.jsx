@@ -36,7 +36,10 @@ export function Header() {
 
     return (
         <>
-        <button id='openButton' onClick={openModal}><img id='navicon' src={navImage} alt="Menu" /></button>
+        <div className="control-button">
+            <button id='openButton' onClick={openModal}><img id='navicon' src={navImage} alt="Menu" /></button>
+        </div>
+        <div className="control-header">
         <header className='header-projects' id='listPages'>
             <ul>
                 <li className='home'><Link to="/"><span className='menu'></span><a className='menu'>ÍNICIO</a></Link></li>
@@ -45,6 +48,7 @@ export function Header() {
                 <li className='proj'><Link to="/projetos"><span className='menu'></span><a className='menu'>PROJETOS</a></Link></li>
             </ul>
         </header>
+        </div>
         </>
     );
 }
