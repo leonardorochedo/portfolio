@@ -29,7 +29,7 @@ export function About() {
                 <h2>Me chamo Leonardo atualmente tenho {myAge} anos e estou cursando TADS no IFPR de Londrina, sempre fui apaixonado por tecnologia desde pequeno e esse lado meu só cresce!
                 </h2>
                 <h2>
-                Estou focando meus estudos atualmente voltado para o <i>Desenvolvimento Web Front End</i> e estou gostando muito, porém não me prendo nisso e quero a cada dia aprender novas coisas.
+                Estou focando meus estudos atualmente voltado para o <i>Desenvolvimento Full Stack</i> e estou gostando muito, porém não me prendo apenas nisso e quero a cada dia aprender novas coisas.
                 </h2>
             </div>
                 </Fade>

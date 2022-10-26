@@ -55,6 +55,11 @@
 
 }
 
+.form form input,
+.form form textarea {
+    padding: .5rem;
+}
+
 .form form .inputButtons {
     border-radius: 5px;
 

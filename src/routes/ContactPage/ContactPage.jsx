@@ -33,7 +33,7 @@ export function ContactPage() {
     useEffect(() => {
         const button = document.querySelector("#buttonForm");
 
-            if (message != "") {
+            if (message) {
                 button.disabled = false;
                 button.classList.remove("disabled")
                 button.classList.add("enabled")
@@ -54,10 +54,10 @@ export function ContactPage() {
             <div className="form">
             <h2 className='tittle-form'>Me mande um <i>E-mail!</i></h2>
                 <form onSubmit={sendEmail}>
-                    <input autoFocus className='inputButtons' type="text" name='name' placeholder=' Nome' />
-                    <input className='inputButtons' type="text" name='cel' placeholder=' Celular' />
-                    <input className='inputButtons' type="email" name='email' placeholder=' Seu e-mail' />
-                    <textarea className='messageValue' name="message" placeholder=' Digite aqui sua mensagem...' value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
+                    <input autoFocus className='inputButtons' type="text" name='name' placeholder='Nome' required />
+                    <input className='inputButtons' type="text" name='cel' placeholder='Celular' required />
+                    <input className='inputButtons' type="email" name='email' placeholder='Seu e-mail' required />
+                    <textarea className='messageValue' name="message" placeholder='Digite aqui sua mensagem...' value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
                     <button className='inputButtons' id="buttonForm" type='submit' >Enviar</button>
                 </form>
             </div>
