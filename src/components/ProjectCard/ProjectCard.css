@@ -8,21 +8,38 @@ div.project-card {
     flex-direction: row;
     justify-content: space-between;
 
-    height: 100vh;
+    /* height: 100vh; */
 
     background-color: rgba(52, 52, 52, 0.345);
 
     border: none;
 }
 
-.project-card .text-card {
+.text-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
     margin: 3rem;
 }
 
-.project-card .text-card p {
-    margin-top: 4rem;
+.text-card p {
+    margin-top: 0rem;
 }
 
+.text-card .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+}
+
+.text-card i img {
+    height: auto;
+    width: 3em;
+}
 
 .project-card img {
     height: 60vh;
@@ -65,11 +82,20 @@ div.project-card {
         justify-content: space-between;
     
         height: 100vh;
-    
-        background-color: rgba(52, 52, 52, 0.345);
-    
-        border: none;
     }
+
+    .text-card {
+        margin: 1rem 3rem;
+    }
+    
+    .text-card p {
+        margin-top: 2rem;
+    }
+    
+    .text-card .icons {
+        margin: 1rem 0;
+    }
+
 }
 
 @media (max-width: 430px){
@@ -91,10 +117,13 @@ div.project-card {
     }
     
     .project-card .text-card p {
-        margin-top: 1rem;
+        margin: 1rem 0;
     }
     
-    
+    .text-card .icons i img {
+        width: 2rem;
+    }
+
     .project-card img {
         height: 70vh;
         width: fit-content;

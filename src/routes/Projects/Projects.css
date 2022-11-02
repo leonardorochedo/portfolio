@@ -11,7 +11,7 @@ h1.title-projects {
 
     height: 60vh;
 
-    border-radius: 100px;
+    border-radius: 5px;
 }
 
 .btnProjects {
@@ -28,8 +28,6 @@ h1.title-projects {
         background-color: rgba(52, 52, 52, 0.345);
     
         height: 53vh;
-    
-        border-radius: 100px;
     }
     
     .btnProjects .button button {
@@ -46,9 +44,6 @@ h1.title-projects {
 @media (max-width: 1190px) {
     .swiper {
         width: 80vw;
-        /* height: 80vh; */
-    
-        border-radius: 100px;
     }
     
     .btnProjects {
@@ -65,8 +60,6 @@ h1.title-projects {
     .swiper {
         width: 80vw;
         height: 80vh;
-    
-        border-radius: 100px;
     }
     
     .btnProjects {

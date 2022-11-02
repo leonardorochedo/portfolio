@@ -28,6 +28,17 @@ import backSunrain from '../../assets/projects/sunrain.png';
 import backPokedex from '../../assets/projects/pokedex.png';
 import backToughts from '../../assets/projects/toughts.png';
 
+// Icons
+import reactImg from '../../assets/techs/react-icon.png'
+import tsImg from '../../assets/techs/type-icon.png'
+import jsImg from '../../assets/techs/js-icon.png'
+import mysqlImg from '../../assets/techs/mysql-icon.png'
+import nodeImg from '../../assets/techs/node-icon.png'
+import mongoImg from '../../assets/techs/mongo-icon.png'
+import hbsImg from '../../assets/techs/hbs-icon.png'
+import htmlImg from '../../assets/techs/html-icon.png'
+import cssImg from '../../assets/techs/css-icon.png'
+
 export function Projects() {
 
     const toughts = {
@@ -117,15 +128,15 @@ export function Projects() {
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
-                <SwiperSlide><ProjectCard title={toughts.title} text={toughts.text} link={toughts.link} image={toughts.background}/></SwiperSlide>
-                <SwiperSlide><ProjectCard title={pokedex.title} text={pokedex.text} link={pokedex.link} image={pokedex.background}/></SwiperSlide>
-                <SwiperSlide><ProjectCard title={sunrain.title} text={sunrain.text} link={sunrain.link} image={sunrain.background}/></SwiperSlide>
-                <SwiperSlide><ProjectCard title={rocketcard.title} text={rocketcard.text} link={rocketcard.link} image={rocketcard.background}/></SwiperSlide>
-                <SwiperSlide><ProjectCard title={countdown.title} text={countdown.text} link={countdown.link} image={countdown.background}/></SwiperSlide>
-                <SwiperSlide><ProjectCard title={listapresenca.title} text={listapresenca.text} link={listapresenca.link} image={listapresenca.background}/></SwiperSlide>
-                <SwiperSlide><ProjectCard title={nlwImpulse.title} text={nlwImpulse.text} link={nlwImpulse.link} image={nlwImpulse.background}/></SwiperSlide>
-                <SwiperSlide><ProjectCard title={fotonovo.title} text={fotonovo.text} link={fotonovo.link} image={fotonovo.background}/></SwiperSlide>
-                <SwiperSlide><ProjectCard title={jta.title} text={jta.text} link={jta.link} image={jta.background}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={toughts.title} text={toughts.text} link={toughts.link} image={toughts.background} icon1={nodeImg} icon2={hbsImg} icon3={mysqlImg}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={pokedex.title} text={pokedex.text} link={pokedex.link} image={pokedex.background} icon1={reactImg} icon2={tsImg}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={sunrain.title} text={sunrain.text} link={sunrain.link} image={sunrain.background} icon1={reactImg} icon2={tsImg}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={rocketcard.title} text={rocketcard.text} link={rocketcard.link} image={rocketcard.background} icon1={reactImg} icon2={jsImg} icon3={tsImg}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={countdown.title} text={countdown.text} link={countdown.link} image={countdown.background} icon1={reactImg} icon2={jsImg}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={listapresenca.title} text={listapresenca.text} link={listapresenca.link} image={listapresenca.background} icon1={reactImg} icon2={jsImg}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={nlwImpulse.title} text={nlwImpulse.text} link={nlwImpulse.link} image={nlwImpulse.background} icon1={reactImg} icon2={tsImg}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={fotonovo.title} text={fotonovo.text} link={fotonovo.link} image={fotonovo.background} icon1={htmlImg} icon2={cssImg} icon3={jsImg}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={jta.title} text={jta.text} link={jta.link} image={jta.background} icon1={htmlImg} icon2={cssImg} icon3={jsImg}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={inProgress.title} text={inProgress.text} link={inProgress.link} image={inProgress.background}/></SwiperSlide>
             </Swiper>
             </Fade>
