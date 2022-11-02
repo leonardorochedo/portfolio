@@ -2,7 +2,11 @@
     display: flex;
     justify-content: space-between;
 
-    overflow: hidden;
+    flex-wrap: wrap;
+
+    overflow: visible;
+
+    margin-bottom: 5em;
 }
 
 /* Botão */
@@ -17,7 +21,6 @@
 /* Cards */
 .card {
     padding: .75rem 0;
-
     cursor: pointer;
 
     width: 15rem;
@@ -34,7 +37,7 @@
 
 /* Tilt-Card */
 .tilt-card {
-    margin-top: 5rem;
+    margin: 5rem 3rem 0 3rem;
 }
 
 @media (min-width: 1700px){
@@ -52,7 +55,7 @@
     }
 
     .tilt-card {
-        margin-top: 1rem;
+        margin: 5em 5em;
 
         width: 20rem;
     }

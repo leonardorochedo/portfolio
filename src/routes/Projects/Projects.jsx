@@ -17,16 +17,16 @@ import { Contact } from "../../../src/components/Contact/Contact";
 import { ProjectCard } from "../../../src/components/ProjectCard/ProjectCard";
 
 // Imagens
-import backFotonovo from '../../assets/fotonovo.png';
-import backJta from '../../assets/jta.png';
-import backRocketcard from '../../assets/rocketcard.png';
-import backListPresen from '../../assets/listapresenca.png';
-import backCountdown from '../../assets/countdown.png';
-import backImpulse from '../../assets/nlwimpulse.png';
-import backProgess from '../../assets/inprogress.png';
-import backSunrain from '../../assets/sunrain.png';
-import backPokedex from '../../assets/pokedex.png';
-import backToughts from '../../assets/toughts.png';
+import backFotonovo from '../../assets/projects/fotonovo.png';
+import backJta from '../../assets/projects/jta.png';
+import backRocketcard from '../../assets/projects/rocketcard.png';
+import backListPresen from '../../assets/projects/listapresenca.png';
+import backCountdown from '../../assets/projects/countdown.png';
+import backImpulse from '../../assets/projects/nlwimpulse.png';
+import backProgess from '../../assets/projects/inprogress.png';
+import backSunrain from '../../assets/projects/sunrain.png';
+import backPokedex from '../../assets/projects/pokedex.png';
+import backToughts from '../../assets/projects/toughts.png';
 
 export function Projects() {
 

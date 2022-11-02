@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 import { Header } from '../../components/Header/Header';
 import { Waves } from '../../components/Waves/Waves';
@@ -17,10 +17,10 @@ export function SuccessPage() {
         <Header />
         </div>
         <div className="container success">
-            <Fade>
+            <Zoom>
             <img src={successImg} alt="Icone de sucesso" />
             <h2>E-mail enviado com sucesso!</h2>
-            </Fade>
+            </Zoom>
             <Waves />
         </div>
         </>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Tilt from 'react-parallax-tilt';
-import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 
 import './Techs.css';
@@ -13,10 +13,12 @@ import { Contact } from "../../../src/components/Contact/Contact";
 import { CardButton } from "../../../src/components/CardButton/CardButton";
 
 // Imagens
-import reactImg from '../../assets/react-icon.png'
-import tsImg from '../../assets/type-icon.png'
-import jsImg from '../../assets/js-icon.png'
-import mysqlImg from '../../assets/mysql-icon.png'
+import reactImg from '../../assets/techs/react-icon.png'
+import tsImg from '../../assets/techs/type-icon.png'
+import jsImg from '../../assets/techs/js-icon.png'
+import mysqlImg from '../../assets/techs/mysql-icon.png'
+import nodeImg from '../../assets/techs/node-icon.png'
+import mongoImg from '../../assets/techs/mongo-icon.png'
 
 export function Techs() {
 
@@ -26,7 +28,7 @@ export function Techs() {
             <Header />
         </div>
         <div className="container techs">
-            <Fade>
+            <Zoom>
             <div className="tilt-card">
                 <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
                     <CardButton name="React" class="c front react" style={reactImg}/>
@@ -44,10 +46,20 @@ export function Techs() {
             </div>
             <div className="tilt-card">
                 <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
+                    <CardButton name="Node.js" class="c front mysql" style={nodeImg}/>
+                </Tilt>
+            </div>
+            <div className="tilt-card">
+                <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
+                    <CardButton name="MongoDB" class="c front mysql" style={mongoImg}/>
+                </Tilt>
+            </div>
+            <div className="tilt-card">
+                <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
                     <CardButton name="MySQL" class="c front mysql" style={mysqlImg}/>
                 </Tilt>
-            </div>       
-            </Fade> 
+            </div>
+            </Zoom> 
             <Waves />
             <div className="btnTech">
                 <Contact />

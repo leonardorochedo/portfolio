@@ -5,7 +5,7 @@ import { useSpring, animated as a } from 'react-spring';
 import './CardButton.css'
 
 // Imagens
-import interrogationImg from '../../assets/interrogation.png'
+import interrogationImg from '../../assets/techs/interrogation.png'
 
 export function CardButton(props) {
 
