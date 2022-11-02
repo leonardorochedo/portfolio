@@ -1,5 +1,5 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 
 // Componentes
@@ -30,7 +30,7 @@ export function Home() {
         <div className='container headerHome'>
             <Header />
         <div className='container-home'>
-            <Fade>
+            <Zoom>
             <div className="text">
                 <h1>Olá! Me chamo Leonardo. Prazer <span>👋</span></h1>
                 <h2>Desenvolvedor Full Stack</h2>
@@ -43,7 +43,7 @@ export function Home() {
             <div className="image">
                 <img src={menCoding} alt="Homem sentado usando o computador" />
             </div>
-            </Fade>
+            </Zoom>
             <Waves />
             <Contact />
         </div>

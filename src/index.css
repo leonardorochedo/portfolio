@@ -1,4 +1,9 @@
 /* OVERFLOW BAR */
+body {
+  background-color: #03001e;
+  overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
   width: 8px;               /* width of the entire scrollbar */
 }
@@ -13,7 +18,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 html {
-  /* overflow-y: hidden; */
   overflow-x: visible;
 }
 

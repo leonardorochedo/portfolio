@@ -1,8 +1,3 @@
-body {
-    background-color: #03001e;
-    overflow-x: hidden;
-}
-
 .container-home {
     display: flex;
     justify-content: space-between;
@@ -58,7 +53,7 @@ body {
     }
 
     .text {
-        margin-bottom: 50rem;
+        /* margin-bottom: 50rem; */
     }
 
     .text .icons svg {
