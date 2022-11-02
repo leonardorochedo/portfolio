@@ -26,8 +26,16 @@ import backImpulse from '../../assets/nlwimpulse.png';
 import backProgess from '../../assets/inprogress.png';
 import backSunrain from '../../assets/sunrain.png';
 import backPokedex from '../../assets/pokedex.png';
+import backToughts from '../../assets/toughts.png';
 
 export function Projects() {
+
+    const toughts = {
+        title: "Toughts",
+        text: "Um lugar onde você pode publicar seus pensamentos, e também ler o de outros usuários!",
+        link: "https://github.com/leonardorochedo/toughts",
+        background: backToughts
+    }
 
     const pokedex = {
         title: "Pokédex",
@@ -109,6 +117,7 @@ export function Projects() {
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
+                <SwiperSlide><ProjectCard title={toughts.title} text={toughts.text} link={toughts.link} image={toughts.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={pokedex.title} text={pokedex.text} link={pokedex.link} image={pokedex.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={sunrain.title} text={sunrain.text} link={sunrain.link} image={sunrain.background}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={rocketcard.title} text={rocketcard.text} link={rocketcard.link} image={rocketcard.background}/></SwiperSlide>
