@@ -1,6 +1,7 @@
 import React from 'react';
-import Zoom from 'react-reveal/Zoom';
 
+import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 // Componentes
 import { Header } from '../../../src/components/Header/Header';
@@ -28,7 +29,9 @@ export function Home() {
     return (
         <>
         <div className='container headerHome'>
-            <Header />
+            <Fade>
+                <Header />
+            </Fade>
         <div className='container-home'>
             <Zoom>
             <div className="text">
