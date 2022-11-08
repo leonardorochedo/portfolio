@@ -142,9 +142,9 @@ export function Projects() {
             </Fade>
             </div>    
             <Waves />
-            <div className="btnProjects">
+            {/* <div className="btnProjects">
                 <Contact className="btnProjects"/>
-            </div>
+            </div> */}
         </div>
         </>
     );

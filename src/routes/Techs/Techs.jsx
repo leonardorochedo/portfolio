@@ -61,9 +61,9 @@ export function Techs() {
             </div>
             </Zoom> 
             <Waves />
-            <div className="btnTech">
+            {/* <div className="btnTech">
                 <Contact />
-            </div>
+            </div> */}
         </div>
         </>
     );

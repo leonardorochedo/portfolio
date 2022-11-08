@@ -34,9 +34,9 @@ export function About() {
             </div>
                 </Fade>
             <Waves />
-            <div className="btnAbout">
+            {/* <div className="btnAbout">
                 <Contact className="buttonAbout" />
-            </div>
+            </div> */}
         </div>
     );
 }

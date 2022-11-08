@@ -20,9 +20,9 @@ export function NotFound() {
                 </Fade>
             </div>
             <Waves />
-            <div className="btn">
+            {/* <div className="btn">
                 <Contact />
-            </div>
+            </div> */}
         </div>
     );
 }
