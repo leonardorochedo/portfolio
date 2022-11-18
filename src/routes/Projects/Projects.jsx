@@ -27,6 +27,8 @@ import backProgess from '../../assets/projects/inprogress.png';
 import backSunrain from '../../assets/projects/sunrain.png';
 import backPokedex from '../../assets/projects/pokedex.png';
 import backToughts from '../../assets/projects/toughts.png';
+import backDsmeta from '../../assets/projects/dsmeta.png';
+import backGetAPet from '../../assets/projects/get-a-pet.png';
 
 // Icons
 import reactImg from '../../assets/techs/react-icon.png'
@@ -38,8 +40,23 @@ import mongoImg from '../../assets/techs/mongo-icon.png'
 import hbsImg from '../../assets/techs/hbs-icon.png'
 import htmlImg from '../../assets/techs/html-icon.png'
 import cssImg from '../../assets/techs/css-icon.png'
+import springImg from '../../assets/techs/spring-icon.svg'
 
 export function Projects() {
+
+    const getapet = {
+        title: "Get A Pet",
+        text: "Site para você que quer adotar um animalzinho e também publicar que está doando seu pet!!",
+        link: "https://github.com/leonardorochedo/get-a-pet",
+        background: backGetAPet
+    }
+
+    const dsmeta = {
+        title: "DSMeta",
+        text: "Sistema de verificar as vendas dos funcionários e notifica via SMS qual foi o melhor!",
+        link: "https://dsmeta-leonardo-pr.netlify.app/",
+        background: backDsmeta
+    }
 
     const toughts = {
         title: "Toughts",
@@ -128,6 +145,8 @@ export function Projects() {
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
+                <SwiperSlide><ProjectCard title={getapet.title} text={getapet.text} link={getapet.link} image={getapet.background} icon1={reactImg} icon2={nodeImg} icon3={mongoImg}/></SwiperSlide>
+                <SwiperSlide><ProjectCard title={dsmeta.title} text={dsmeta.text} link={dsmeta.link} image={dsmeta.background} icon1={reactImg} icon2={springImg} icon3={mysqlImg}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={toughts.title} text={toughts.text} link={toughts.link} image={toughts.background} icon1={nodeImg} icon2={hbsImg} icon3={mysqlImg}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={pokedex.title} text={pokedex.text} link={pokedex.link} image={pokedex.background} icon1={reactImg} icon2={tsImg}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={sunrain.title} text={sunrain.text} link={sunrain.link} image={sunrain.background} icon1={reactImg} icon2={tsImg}/></SwiperSlide>
