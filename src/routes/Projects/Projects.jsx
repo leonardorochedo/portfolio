@@ -54,7 +54,7 @@ export function Projects() {
     const dsmeta = {
         title: "DSMeta",
         text: "Sistema de verificar as vendas dos funcionários e notifica via SMS qual foi o melhor!",
-        link: "https://dsmeta-leonardo-pr.netlify.app/",
+        link: "https://github.com/leonardorochedo/dsmeta",
         background: backDsmeta
     }
 
