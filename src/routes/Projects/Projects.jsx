@@ -29,6 +29,7 @@ import backPokedex from '../../assets/projects/pokedex.png';
 import backToughts from '../../assets/projects/toughts.png';
 import backDsmeta from '../../assets/projects/dsmeta.png';
 import backGetAPet from '../../assets/projects/get-a-pet.png';
+import paduanViagens from '../../assets/projects/paduan.png';
 
 // Icons
 import reactImg from '../../assets/techs/react-icon.png'
@@ -43,6 +44,13 @@ import cssImg from '../../assets/techs/css-icon.png'
 import springImg from '../../assets/techs/spring-icon.svg'
 
 export function Projects() {
+
+    const paduan = {
+        title: "Padúan",
+        text: "Trabalho que fiz para uma agência de viagens!!",
+        link: "https://www.paduanviagens.com.br",
+        background: paduanViagens
+    }
 
     const getapet = {
         title: "Get A Pet",
@@ -145,6 +153,7 @@ export function Projects() {
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
+                <SwiperSlide><ProjectCard title={paduan.title} text={paduan.text} link={paduan.link} image={paduan.background} icon1={reactImg} icon2={cssImg}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={getapet.title} text={getapet.text} link={getapet.link} image={getapet.background} icon1={reactImg} icon2={nodeImg} icon3={mongoImg}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={dsmeta.title} text={dsmeta.text} link={dsmeta.link} image={dsmeta.background} icon1={reactImg} icon2={springImg} icon3={mysqlImg}/></SwiperSlide>
                 <SwiperSlide><ProjectCard title={toughts.title} text={toughts.text} link={toughts.link} image={toughts.background} icon1={nodeImg} icon2={hbsImg} icon3={mysqlImg}/></SwiperSlide>
