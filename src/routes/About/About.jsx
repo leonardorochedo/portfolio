@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Fade from 'react-reveal/Fade';
-
 import './About.css';
 
 // Componentes
@@ -22,7 +20,6 @@ export function About() {
         <>
         <Header />
         <div className="container about">
-                <Fade>
             <div className='imageAbout'>
                 <img className='perfil' src={perfilImg} alt="Foto de perfil" />
             </div>
@@ -33,7 +30,6 @@ export function About() {
                 Estou focando meus estudos atualmente voltado para o <i>Desenvolvimento Full Stack</i> e estou gostando muito, porém não me prendo apenas nisso e quero a cada dia aprender novas coisas.
                 </p>
             </div>
-                </Fade>
             <Waves />
         </div>
         <div className="contact-button">
