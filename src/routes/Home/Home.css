@@ -5,12 +5,12 @@
   justify-content: flex-end;
 }
 
-.image {
+.walk {
   margin: 3rem 0;
 }
 
-.image img {
-  width: 18rem;
+.walk {
+  width: 24rem;
   height: auto;
 }
 
@@ -64,11 +64,6 @@
   .text {
     margin-top: 2rem;
   }
-
-  .image img {
-    width: 22rem;
-    margin: 2rem 0;
-  }
 }
 
 @media (min-width: 1000px) {
@@ -78,13 +73,9 @@
     text-align: center;
   }
 
-  .image {
-    margin: 3rem 0;
-  }
-
-  .image img {
-    width: 26vw;
-    height: auto;
+  .walk {
+    width: 30em;
+    margin: 2rem 0;
   }
 
   .text {

@@ -5,8 +5,9 @@ import { Header } from '../../../src/components/Header/Header';
 import { Waves } from "../../../src/components/Waves/Waves";
 import { ContactButton } from "../../../src/components/ContactButton/ContactButton";
 
-// Imagens
-import menCoding from '../../assets/home/coding.png'
+// Animation
+import Lottie from "lottie-react";
+import groovyWalkAnimation from "./groovyWalkAnimation.json";
 
 import './Home.css';
 
@@ -16,8 +17,8 @@ export function Home() {
         <>
         <Header />
         <div className="container container-home-all">
-            <div className="image">
-                <img src={menCoding} alt="Homem sentado usando o computador" />
+            <div className="walk">
+                <Lottie animationData={groovyWalkAnimation} loop={true} />
             </div>
             <div>
                 <div className="text">

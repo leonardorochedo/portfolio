@@ -19,11 +19,13 @@ Aprendi bastante coisa com esse projeto, tecnologias, bibliotecas e uns hooks qu
 Utilizei nesse projeto tecnologias como ⚛️
 
 ReactJS<br>
-React-Router-Dom<br>
-React-Parallax-Tilt<br>
-SwiperJS<br>
-EmailJS<br>
-UseSpring<br>
+react-router-dom<br>
+react-parallax-tilt<br>
+react-toastify
+lottie-react<br>
+swiper-js<br>
+email-js<br>
+use-spring<br>
 
 Para visita-lo acesse: www.leonardorochedo.com.br
 
