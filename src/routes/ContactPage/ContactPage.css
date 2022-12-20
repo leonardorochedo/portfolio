@@ -129,15 +129,15 @@ button.disabled {
   .form form input,
   .form form textarea,
   .form form .inputButtons {
-    width: 30vw;
+    width: 25vw;
   }
 
   .container .whatsapp {
-    width: 30vw;
+    width: 25vw;
   }
 
   .form,
   .container .whatsapp {
-    margin-top: 2rem;
+    margin-top: 2.5em;
   }
 }

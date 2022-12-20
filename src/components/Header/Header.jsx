@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import { ToastContainer } from "react-toastify";
 
 // Imagens
-import arrowClose from '../../assets/close-nav.svg'
-import arrowOpen from '../../assets/open-nav.svg'
+import arrowClose from '../../assets/header/close-nav.svg'
+import arrowOpen from '../../assets/header/open-nav.svg'
 
 import './Header.css'
 

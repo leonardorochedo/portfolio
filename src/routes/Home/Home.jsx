@@ -6,7 +6,7 @@ import { Waves } from "../../../src/components/Waves/Waves";
 import { ContactButton } from "../../../src/components/ContactButton/ContactButton";
 
 // Imagens
-import menCoding from '../../assets/coding.png'
+import menCoding from '../../assets/home/coding.png'
 
 import './Home.css';
 

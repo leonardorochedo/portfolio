@@ -8,7 +8,7 @@ import { Waves } from "../../../src/components/Waves/Waves";
 import { ContactButton } from "../../../src/components/ContactButton/ContactButton";
 
 // Imagens
-import perfilImg from '../../assets/perfil.jpg'
+import perfilImg from '../../assets/about/perfil.jpg'
 
 export function About() {
 

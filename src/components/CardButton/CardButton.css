@@ -1,8 +1,10 @@
 .c {
   position: absolute;
 
-  width: 28ch;
-  height: 25ch;
+  /* width: 28ch; */
+  /* height: 25ch; */
+  width: 14rem;
+  height: 14rem;
   cursor: pointer;
   will-change: transform, opacity;
 }
