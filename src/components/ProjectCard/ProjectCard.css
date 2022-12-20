@@ -1,131 +1,56 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #26262e;
+
+  border: none;
+}
+
 a.project-cards {
   text-decoration: none;
   cursor: pointer;
-}
-
-div.project-card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  /* height: 100vh; */
-
-  background-color: rgba(52, 52, 52, 0.345);
-
-  border: none;
 }
 
 .text-card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
-  margin: 3rem;
 }
 
-.text-card p {
-  margin-top: 0rem;
+.text-card .text {
+  margin: 1.25rem 1rem;
+}
+
+.text-card .text h2 {
+  margin-bottom: 1rem;
 }
 
 .text-card .icons {
   display: flex;
   flex-direction: row;
+
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-
-  margin-bottom: 2rem;
 }
 
-.text-card i img {
-  height: auto;
-  width: 3em;
+.text-card .icons i {
+  margin: 1rem;
+  border: none;
 }
 
-.project-card img {
-  height: 60vh;
-  width: 60vw;
+.text-card .icons i img {
+  width: 3rem;
 }
 
-@media (max-width: 1100px) {
-  div.project-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    height: 100vh;
-
-    background-color: rgba(52, 52, 52, 0.345);
-
-    border: none;
-  }
-
-  .project-card .text-card {
-    margin: 3rem;
-  }
-
-  .project-card .text-card p {
-    margin-top: 4rem;
-  }
-
-  .project-card img {
-    height: 60vh;
-    /* width: 80vw; */
-  }
+.project-card img#background {
+  bottom: 0;
+  position: absolute;
+  width: -webkit-fill-available;
+  z-index: 0;
 }
 
-@media (max-width: 1190px) {
-  div.project-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 100vh;
-  }
-
-  .text-card {
-    margin: 1rem 3rem;
-  }
-
-  .text-card p {
-    margin-top: 2rem;
-  }
-
-  .text-card .icons {
-    margin: 1rem 0;
-  }
-
-  .project-card img {
-    height: 60vh;
-    width: auto;
-  }
-}
-
-@media (max-width: 430px) {
-  div.project-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 100vh;
-
-    background-color: rgba(52, 52, 52, 0.345);
-
-    border: none;
-  }
-
-  .project-card .text-card {
-    margin: -3rem 1rem 1rem 1rem;
-  }
-
-  .project-card .text-card p {
-    margin: 1rem 0;
-  }
-
-  .text-card .icons i img {
-    width: 2rem;
-  }
-
-  .project-card img {
-    height: 70vh;
-  }
+.project-card .text-card {
+  z-index: 1;
+  background-color: #26262e;
 }

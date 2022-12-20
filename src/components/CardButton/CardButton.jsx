@@ -39,7 +39,7 @@ export function CardButton(props) {
     return (
     <>
     <div className="card" onClick={Flipped}>
-                <h2 id="change-opacity" ref={h2Text}>{h2TextValue}</h2>
+                <h2 ref={h2Text}>{h2TextValue}</h2>
                 <a.div class="c back" style={{ backgroundImage: `url(${interrogationImg})`, opacity: opacity.interpolate((o) => 1 - o), transform }} />
                 <a.div class={props.class} style={{ backgroundImage: `url(${props.style})`,opacity, transform: transform.interpolate((t) => `${t} rotateX(180deg)`) }} />
     </div>

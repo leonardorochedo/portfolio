@@ -1,69 +1,46 @@
-h1.title-projects {
-    margin: 1rem 0 2rem 0;
+.projects {
+  display: flex;
+  flex-direction: column;
 }
 
-.projects {
-    margin-top: 4rem;
+.projects h1 {
+  margin: 2rem 0;
 }
 
 .swiper {
-    background-color: rgba(52, 52, 52, 0.345);
+  background-color: #26262e;
 
-    height: 60vh;
+  width: 70vw;
+  height: 50vh;
 
-    border-radius: 5px;
+  border-radius: 20px;
+  margin-bottom: 4rem;
 }
 
-.btnProjects {
-    position: fixed;
+@media (min-width: 600px) {
+  .swiper {
+    background-color: #26262e;
+
+    width: 70vw;
+    height: 65vh;
+
+    border-radius: 20px;
+    margin-bottom: 4rem;
+  }
 }
 
-.btnProjects .button button {
-    margin-top: -25rem;
-}
+@media (min-width: 1000px) {
+  .swiper {
+    background-color: #26262e;
 
-@media (min-width: 1700px){
-    
-    .swiper {
-        background-color: rgba(52, 52, 52, 0.345);
-    
-        height: 53vh;
-    }
-    
-    .btnProjects .button button {
-        margin-top: -32rem;
-    }
-}
+    width: 40vw;
+    height: 65vh;
 
-@media (min-width: 1400px){
-    .btnProjects .button button {
-        margin-top: -30rem;
-    }
-}
+    border-radius: 20px;
+    margin: 0;
+  }
 
-@media (max-width: 1190px) {
-    .swiper {
-        width: 80vw;
-    }
-    
-    .btnProjects {
-        display: none;
-    }
-
-}
-
-@media (max-width: 430px){
-    h1.title-projects {
-        margin: 0;
-    }
-    
-    .swiper {
-        width: 80vw;
-        height: 80vh;
-    }
-    
-    .btnProjects {
-        display: none;
-    }
-
+  .projects h1 {
+    margin-top: -1rem;
+  }
 }

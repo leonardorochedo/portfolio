@@ -1,0 +1,62 @@
+.button {
+  z-index: 1;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.button button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  border: none;
+
+  /* font-family: "Roboto", sans-serif; */
+  /* font-weight: 600; */
+  /* color: white; */
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+
+  background: blue;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  transition: 0.5s;
+}
+
+.button button img {
+  width: 1.5rem;
+  /* margin-right: 1rem; */
+}
+
+@media (min-width: 600px) {
+  .button {
+    bottom: 4rem;
+    right: 4rem;
+  }
+
+  .button button {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .button button:hover {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    width: 10rem;
+    border-radius: 20px;
+    color: white;
+  }
+
+  .button button:hover > img {
+    margin-right: 1rem;
+  }
+}

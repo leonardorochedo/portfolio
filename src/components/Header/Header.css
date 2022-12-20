@@ -1,284 +1,97 @@
-:root {
-    --animation-header: blue;
+header {
+  margin: 2rem 0;
+}
+
+.header-projects {
+  transition: 0.5s;
+  display: none;
+}
+
+.header-projects ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-projects ul li {
+  list-style-type: none;
+  padding: 5rem 0;
+}
+
+.header-projects ul li.home,
+.header-projects ul li.about,
+.header-projectsader ul li.tec,
+.header-projects ul li.proj,
+.header-projects ul li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+
+  color: aliceblue;
+  transition: 0.3s;
+}
+
+.control-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control-header {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+
+  z-index: 1;
 }
 
 button#openButton {
-    display: none;
+  display: none;
 }
 
-header {
-    width: 100vw;
-    height: 11.5vh;
+button#openButton {
+  display: flex;
 
+  background-color: transparent;
+  border: none;
+
+  transition: 0.3s;
+}
+
+button img#navicon {
+  transition: 0.3s;
+}
+
+@media (min-width: 1000px) {
+  .control-header {
     display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    height: auto;
+  }
 
-    margin-left: -3.5rem;
-}
+  .header-projects {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
 
-header ul {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+  .header-projects ul {
+    display: flex;
+    flex-direction: row;
+  }
 
-header ul li {
-    list-style-type: none;
-    display: inline-block;
+  .header-projects ul li {
+    padding: 1rem 2rem;
+  }
 
-    margin: 0 3rem 0 3rem;
-}
+  .header-projects ul li a:hover {
+    color: blue;
+  }
 
-header ul li.home,
-header ul li.about,
-header ul li.tec,
-header ul li.proj,
-header ul li a {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-
-    margin-top: 4rem;
-    padding: 5px;
-
-    color: aliceblue;
-    transition: 0.5s;
-
-    transform: translate(-50%, -50%);
-}
-
-/* Transition menu */
-a.menu::after,
-span.menu::before {
-    content: '';
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: transparent;
-    transition: 1s;
-    /* -webkit-mix-blend-mode: hue; */
-}
-
-a.menu::after {
-    top: -2px;
-    right: -2px;
-    border-top: 2px solid var(--animation-header);
-    border-right: 2px solid var(--animation-header);
-}
-  
-span.menu::before {
-    bottom: -2px;
-    left: -2px;
-    border-bottom: 2px solid var(--animation-header);
-    border-left: 2px solid var(--animation-header);
-} 
-
-a.menu:hover::after,
-a:hover span.menu::before  {
-    width: calc( 180px / 2);
-    height: calc( 50px / 2);
-}
-
-@media (min-width: 1700px){
-    header {
-        width: 100vw;
-        height: 13vh;
-    
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-
-        margin-left: -5rem;
-    }
-    
-    header.header-projects {
-        margin-bottom: 4rem;
-    }
-
-    header ul {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-    header ul li {
-        list-style-type: none;
-        display: inline-block;
-    
-        margin: 0 6rem 0 6rem;
-    }
-    
-    header ul li.home,
-    header ul li.about,
-    header ul li.tec,
-    header ul li.proj,
-    header ul li a {
-        text-decoration: none;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        font-size: 34px;
-    
-        margin-top: 4rem;
-        padding: 5px;
-    
-        color: aliceblue;
-        transition: 0.5s;
-    
-        transform: translate(-50%, -50%);
-    }
-}
-
-@media (min-width: 1400px){
-    header {
-        margin: 0 0 0 -1rem;
-    }
-}
-
-@media (max-width: 1190px) {
-    header {
-        margin: 0 0 0 5rem;
-    }
-}
-
-@media (max-width: 1100px){
-    header {
-        margin: 1.5rem 0 3rem 0.5rem;
-    }
-}
-
-@media (max-width: 980px) {
-    .control-button {
-        text-align: -webkit-center;
-        height: 3.5rem;
-        margin-top: 1rem;
-    }
-
-    .control-header {
-        margin-left: 10rem;
-    }
-
-    button#openButton {
-        display: flex;
-        cursor: pointer;
-
-        background-color: transparent;
-        border: none;
-
-        transition: 0.3s;
-    }
-
-    button img#navicon {
-        transition: 0.3s;
-    }
-
-    header {
-        transition: 0.5s;
-        display: none;
-        height: 100vh;
-    }
-
-    header ul {
-        display: flex;
-        flex-direction: column;
-
-        align-items: stretch;
-        margin: 0;
-    }
-    
-    header ul li {
-        list-style-type: none;
-        display: inline-block;
-
-        margin: 0;
-    }
-    
-    header ul li.home,
-    header ul li.about,
-    header ul li.tec,
-    header ul li.proj,
-    header ul li a {
-        margin-bottom: 3rem;
-        padding: 2px;
-    
-        transition: 0.5s;
-
-        transform: translate(-50%, -50%);
-    }
-}
-
-@media (max-width: 430px){
-
-    .control-button {
-        text-align: -webkit-center;
-        height: 3.5rem;
-        margin-top: 1rem;
-    }
-
-    .control-header {
-        margin-left: 0rem;
-    }
-
-    button#openButton {
-        display: flex;
-
-        background-color: transparent;
-        border: none;
-
-        transition: 0.3s;
-    }
-
-    button img#navicon {
-        transition: 0.3s;
-    }
-
-    header {
-        transition: 0.5s;
-        display: none;
-        height: 100vh;
-
-        margin: 3rem 0rem 0 10rem;
-        /* z-index: 2; */
-
-        /* background-color: #03001e; */
-    }
-
-    header ul {
-        display: flex;
-        flex-direction: column;
-
-
-        align-items: stretch;
-        margin: 0;
-    }
-    
-    header ul li {
-        list-style-type: none;
-        display: inline-block;
-
-        margin: 0;
-    }
-    
-    header ul li.home,
-    header ul li.about,
-    header ul li.tec,
-    header ul li.proj,
-    header ul li a {
-        text-decoration: none;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        font-size: 22px;
-    
-        margin: 0 0 8rem 0;
-        padding: 2px;
-    
-        color: aliceblue;
-        transition: 0.5s;
-
-        transform: translate(-50%, -50%);
-    }
-
+  button#openButton {
+    display: none;
+  }
 }

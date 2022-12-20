@@ -21,7 +21,6 @@ Utilizei nesse projeto tecnologias como ⚛️
 ReactJS<br>
 React-Router-Dom<br>
 React-Parallax-Tilt<br>
-React-Reveal<br>
 SwiperJS<br>
 EmailJS<br>
 UseSpring<br>

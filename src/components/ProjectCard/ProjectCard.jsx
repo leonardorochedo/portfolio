@@ -12,15 +12,17 @@ export function ProjectCard(props) {
         <a href={props.link} target="_blank" className='project-cards'>
         <div className='project-card'>
             <div className="text-card">
-                <h2>{props.title}</h2>
-                <p>{props.text}</p>
+                <div className="text">
+                    <h2>{props.title}</h2>
+                    <p>{props.text}</p>
+                </div>
                 <div className="icons">
                     <i><img src={icon1} alt="" /></i>
                     <i><img src={icon2} alt="" /></i>
                     <i><img src={icon3} alt="" /></i>
                 </div>
             </div>
-            <img src={props.image} alt="Foto de fundo" />
+            <img id='background' src={props.image} alt="Foto de fundo" />
         </div>
         </a>
     );

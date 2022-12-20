@@ -1,126 +1,113 @@
-.container-home {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5rem;
-}
-
-.text {
-    margin: 3.5rem 10rem 0 0;
-    mix-blend-mode: exclusion;
-}
-
-.text h1 span {
-    position: fixed;
-    cursor: default;
-
-    animation: handleShake 3s 0.1s infinite ease-in-out alternate;
-}
-
-.text .icons svg {
-    text-decoration: none;
-
-    margin: 3rem 1rem 0 0;
+.container-home-all {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
 }
 
 .image {
-    touch-action: none; /* useSpring */
+  margin: 3rem 0;
 }
 
 .image img {
-    width: 30rem;
-    height: auto;
-    user-select: none; /* useSpring */
+  width: 18rem;
+  height: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text .title {
+  margin-bottom: 1rem;
+}
+
+.text .title h1 {
+  margin-bottom: 1rem;
+}
+
+.text .title h1 span {
+  position: fixed;
+  cursor: default;
+
+  animation: handleShake 3s 0.1s infinite ease-in-out alternate;
+}
+
+.text .icons svg {
+  text-decoration: none;
+  mix-blend-mode: exclusion;
+
+  margin: 1rem 1rem 0 1rem;
+
+  width: 35px;
+  height: 35px;
+}
+
+.contact-button {
+  position: relative;
 }
 
 @keyframes handleShake {
-    0% {
-        transform: rotate(330deg);
-    }
-    50% {
-        transform: rotate(380deg);
-    }
-    100% {
-        transform: rotate(330deg);
-    }
+  0% {
+    transform: rotate(330deg);
+  }
+  50% {
+    transform: rotate(380deg);
+  }
+  100% {
+    transform: rotate(330deg);
+  }
 }
 
-@media (min-width: 1700px){
+@media (min-width: 600px) {
+  .text {
+    margin-top: 2rem;
+  }
 
-    .container-home {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 6rem;
-    }
-
-    .text {
-        /* margin-bottom: 50rem; */
-    }
-
-    .text .icons svg {
-        text-decoration: none;
-    
-        margin: 5rem 1rem 0 0;
-        width: 70px;
-        height: 70px;
-    }
-    
-    .image {
-        touch-action: none; /* useSpring */
-    }
-    
-    .image img {
-        width: 40rem;
-        height: auto;
-        user-select: none; /* useSpring */
-    }
-
+  .image img {
+    width: 22rem;
+    margin: 2rem 0;
+  }
 }
 
-@media (max-width: 1100px){
+@media (min-width: 1000px) {
+  .container-home-all {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
 
-    .text {
-        margin: 3.5rem 5rem 0 0;
-        mix-blend-mode: exclusion;
-    }
+  .image {
+    margin: 3rem 0;
+  }
 
-    .image img {
-        width: 25rem;
-    }
-}
+  .image img {
+    width: 26vw;
+    height: auto;
+  }
 
-@media (max-width: 430px){
-    .container-home {
-        flex-direction: column-reverse;
-        margin-top: 4rem;
+  .text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: -2rem;
+  }
 
-        justify-content: center;
-    }
+  .text .title {
+    margin-bottom: 1rem;
+  }
 
-    .text {
-        margin: 0;
-    }
+  .text .title h1 {
+    margin-bottom: 1rem;
+  }
 
-    .text h1 {
-        margin-bottom: -3rem;
-    }
+  .text .icons svg {
+    text-decoration: none;
 
-    .text .icons svg {
-        text-decoration: none;
-    
-        margin-top: 0.5rem;
+    margin: 1rem 2rem 0 0;
 
-        width: 26px;
-        height: 26px;
-    }
-    
-    .image {
-        touch-action: none; /* useSpring */
-    }
-    
-    .image img {
-        width: 18rem;
-        height: auto;
-        user-select: none; /* useSpring */
-    }
-
+    width: 35px;
+    height: 35px;
+  }
 }

@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 // Imagens
 import planePaper from '../../assets/send.svg'
 
-import './Contact.css';
+import './ContactButton.css';
 
-export function Contact() {
+export function ContactButton() {
 
     return (
         <>
