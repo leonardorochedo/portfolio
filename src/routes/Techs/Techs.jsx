@@ -15,6 +15,7 @@ import reactImg from '../../assets/techs/react-icon.png'
 import tsImg from '../../assets/techs/type-icon.png'
 import jsImg from '../../assets/techs/js-icon.png'
 import nodeImg from '../../assets/techs/node-icon.png'
+import springImg from '../../assets/techs/spring-icon.svg'
 import javaImg from '../../assets/techs/java-icon.png'
 import mysqlImg from '../../assets/techs/mysql-icon.png'
 import mongoImg from '../../assets/techs/mongo-icon.png'
@@ -51,6 +52,11 @@ export function Techs() {
                     <div className="tilt-card">
                         <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
                             <CardButton name="Node.js" class="c front" style={nodeImg}/>
+                        </Tilt>
+                    </div>
+                    <div className="tilt-card">
+                        <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
+                            <CardButton name="Spring" class="c front" style={springImg}/>
                         </Tilt>
                     </div>
                     <div className="tilt-card">
