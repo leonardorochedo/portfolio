@@ -18,7 +18,7 @@ export function About() {
     const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
     const diffInYears = diffInDays/364;
     
-    const myYear = diffInYears.split(".")[0];
+    const myYear = Math.floor(diffInYears);
 
     return (
         <>
