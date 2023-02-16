@@ -20,14 +20,13 @@ import backJta from '../../assets/projects/jta.png';
 import backRocketcard from '../../assets/projects/rocketcard.png';
 import backListPresen from '../../assets/projects/listapresenca.png';
 import backCountdown from '../../assets/projects/countdown.png';
-import backImpulse from '../../assets/projects/nlwimpulse.png';
-import backProgess from '../../assets/projects/inprogress.png';
 import backSunrain from '../../assets/projects/sunrain.png';
 import backPokedex from '../../assets/projects/pokedex.png';
 import backToughts from '../../assets/projects/toughts.png';
 import backDsmeta from '../../assets/projects/dsmeta.png';
 import backGetAPet from '../../assets/projects/get-a-pet.png';
-import paduanViagens from '../../assets/projects/paduan.png';
+import backPaduan from '../../assets/projects/paduan.png';
+import backNewCars from '../../assets/projects/newcars.png';
 
 // Icons
 import reactImg from '../../assets/techs/react-icon.png'
@@ -43,11 +42,12 @@ import springImg from '../../assets/techs/spring-icon.svg'
 
 export function Projects() {
 
-    const paduan = {
-        title: "Padúan",
-        text: "Trabalho que fiz para uma agência de viagens!!",
-        link: "https://www.paduanviagens.com.br",
-        background: paduanViagens
+    // BACKEND
+    const newcars = {
+        title: "NewCars",
+        text: "Um lugar onde você pode vender e comprar seu veículo! Feito para práticar boas práticas em Node.js e React",
+        link: "https://github.com/leonardorochedo/NewCars",
+        background: backNewCars
     }
 
     const getapet = {
@@ -69,6 +69,14 @@ export function Projects() {
         text: "Um lugar onde você pode publicar seus pensamentos, e também ler o de outros usuários!",
         link: "https://github.com/leonardorochedo/toughts",
         background: backToughts
+    }
+
+    // FRONTEND
+    const paduan = {
+        title: "Padúan",
+        text: "Trabalho que fiz para uma agência de viagens!!",
+        link: "https://www.paduanviagens.com.br",
+        background: backPaduan
     }
 
     const pokedex = {
@@ -120,21 +128,6 @@ export function Projects() {
         background: backCountdown
     }
 
-    const nlwImpulse = {
-        title: "NLW Impulse",
-        text: "Maratona da Rocketseat, criamos uma aplicação inteira do zero, um widget de feedback que dê a experiência do usuário fazer um feedback do site com direito até de mandar print de uma forma muito dinâmica",
-        link: "https://github.com/leonardorochedo/nlwImpulse",
-        background: backImpulse
-    }
-
-    const inProgress = {
-        title: "Mais projetos...",
-        text: "Tenho mais repositórios em meu GitHub, venha dar uma olhada",
-        link: "https://github.com/leonardorochedo",
-        background: backProgess
-    }
-
-
     return (
         <>
         <Header />
@@ -172,6 +165,7 @@ export function Projects() {
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
                     >
+                        <SwiperSlide><ProjectCard title={newcars.title} text={newcars.text} link={newcars.link} image={newcars.background} icon1={reactImg} icon2={nodeImg} icon3={mongoImg}/></SwiperSlide>
                         <SwiperSlide><ProjectCard title={dsmeta.title} text={dsmeta.text} link={dsmeta.link} image={dsmeta.background} icon1={reactImg} icon2={springImg} icon3={mysqlImg}/></SwiperSlide>
                         <SwiperSlide><ProjectCard title={getapet.title} text={getapet.text} link={getapet.link} image={getapet.background} icon1={reactImg} icon2={nodeImg} icon3={mongoImg}/></SwiperSlide>
                         <SwiperSlide><ProjectCard title={toughts.title} text={toughts.text} link={toughts.link} image={toughts.background} icon1={nodeImg} icon2={hbsImg} icon3={mysqlImg}/></SwiperSlide>
