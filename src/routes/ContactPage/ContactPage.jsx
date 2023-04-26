@@ -32,7 +32,16 @@ export function ContactPage() {
                 theme: "light",
             })
         }, (error) => {
-            //
+            toast.error("Não foi possível enviar o e-mail!", {
+                position: "top-left",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            })
         });
         e.target.reset();
     }

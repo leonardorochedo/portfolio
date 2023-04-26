@@ -1,0 +1,103 @@
+{
+    "fullstack": {
+        "newcars": {
+            "title": "NewCars",
+            "text": "Um lugar onde você pode vender e comprar seu veículo! Feito para práticar boas práticas em Node.js e React",
+            "link": "https://github.com/leonardorochedo/NewCars"
+        },
+        "getapet": {
+            "title": "Get A Pet",
+            "text": "Site para você que quer adotar um animalzinho e também publicar que está doando seu pet!!",
+            "link": "https://github.com/leonardorochedo/get-a-pet"
+            },
+        "dsmeta": {
+            "title": "DSMeta",
+            "text": "Sistema de verificar as vendas dos funcionários e notifica via SMS qual foi o melhor!",
+            "link": "https://github.com/leonardorochedo/dsmeta"
+        },
+        "toughts": {
+            "title": "Toughts",
+            "text": "Um lugar onde você pode publicar seus pensamentos, e também ler o de outros usuários!",
+            "link": "https://github.com/leonardorochedo/toughts"
+        }
+    },
+    "backend": {
+        "msspring": {
+            "title": "Microsserviços Spring",
+            "text": "Microsserviços Java com Spring Boot, Spring Cloud e muito mais!",
+            "link": "https://github.com/leonardorochedo/ms-spring"
+        },
+        "workspringmongo": {
+            "title": "Spring Boot Post's",
+            "text": "Workshop feito em Spring Boot + Mongo de postagens!",
+            "link": "https://github.com/leonardorochedo/workshop-springboot-mongodb"
+        },
+        "workspring": {
+            "title": "Spring Boot Shop",
+            "text": "Workshop feito em Spring Boot + H2 de uma loja!",
+            "link": "https://github.com/leonardorochedo/workshop-springboot"
+        },
+        "daojdbc": {
+            "title": "Java JDBC",
+            "text": "Projeto feito em curso que utilizamos a biblioteca JDBC na linguagem Java!",
+            "link": "https://github.com/leonardorochedo/dao-jdbc"
+        },
+        "chessmatch": {
+            "title": "Chess Java",
+            "text": "Jogo de Xadrez feito totalmente em Java!",
+            "link": "https://github.com/leonardorochedo/chessmatch"
+        },
+        "nodejsmongo": {
+            "title": "Shop Node",
+            "text": "Primeiro projeto em Node.js + MongoDB ✔️",
+            "link": "https://github.com/leonardorochedo/nodejs-mongodb"
+        },
+        "bankaccount": {
+            "title": "Bank Account",
+            "text": "Simulador de um Caixa Eltrônico / Banco feito com NodeJS 🏦",
+            "link": "https://github.com/leonardorochedo/bank-account"
+        }
+    },
+    "frontend": {
+        "paduan": {
+            "title": "Padúan",
+            "text": "Trabalho que fiz para uma agência de viagens!!",
+            "link": "https://www.paduanviagens.com.br"
+        },
+        "pokedex": {
+            "title": "Pokédex",
+            "text": "Pesquise sobre seu Pokémon preferido e veja sua descrição e poder!",
+            "link": "https://pokedex-seven-drab.vercel.app/"
+        },
+        "sunrain": {
+            "title": "Sunrain",
+            "text": "Consulte a previsão do tempo atual apenas com o nome da cidade!",
+            "link": "https://sunrain.vercel.app/"
+        },
+        "fotonovo": {
+            "title": "Foto Novo",
+            "text": "Website de uma loja local, utilizei HTML, CSS, JavaScript",
+            "link": "https://www.fotonovo.com.br/"
+        },
+        "jta": {
+            "title": "JTA Confecções",
+            "text": "Website de uma loja de roupas, utilizei HTML, CSS, JavaScript",
+            "link": "https://jtaconfeccoes.com.br/"
+        },
+        "rocketcard": {
+            "title": "RocketCard",
+            "text": "Desafio de consumir a API do GitHub gerando um cartão",
+            "link": "https://github.com/leonardorochedo/rocketcard"
+        },
+        "listapresenca": {
+            "title": "Lista de Presença",
+            "text": "Desafio de fazer uma lista de presença de alunos em ReactJS",
+            "link": "https://github.com/leonardorochedo/lista_presenca"
+        },
+        "countdown": {
+            "title": "Countdown",
+            "text": "Desafio de fazer uma contagem regressiva, implementei também umas animações e modais",
+            "link": "https://github.com/leonardorochedo/Countdown"
+        }
+    }
+}
