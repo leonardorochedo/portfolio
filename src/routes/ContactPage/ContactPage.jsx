@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
 
 import emailjs from 'emailjs-com';
 
@@ -7,10 +6,12 @@ import { Header } from '../../components/Header/Header';
 import { Waves } from '../../components/Waves/Waves';
 
 import { toast } from 'react-toastify';
-
 import "react-toastify/dist/ReactToastify.css";
 
 import './ContactPage.css';
+
+// MASK
+import { IMaskInput } from 'react-imask';
 
 export function ContactPage() {
 
@@ -19,8 +20,22 @@ export function ContactPage() {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_hbzvywk', 'template_fqpmqda', e.target, 'uBtKO-dBql1FyAWVL')
-        .then((result) => {
+        const promiseEmail = emailjs.sendForm('service_hbzvywk', 'template_fqpmqda', e.target, 'uBtKO-dBql1FyAWVL')
+
+        if (promiseEmail.pending) {
+            toast.info("Enviando e-mail...", {
+                position: "top-left",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            })
+        }
+
+        promiseEmail.then((result) => {
             toast.success("E-mail enviado com sucesso!", {
                 position: "top-left",
                 autoClose: 5000,
@@ -69,7 +84,8 @@ export function ContactPage() {
             <h2 className='tittle-form'>Me mande um <i>E-mail!</i></h2>
                 <form onSubmit={sendEmail}>
                     <input className='inputButtons' type="text" name='name' placeholder='Nome' required />
-                    <input className='inputButtons' type="text" name='cel' placeholder='Celular' required />
+                    {/* <input className='inputButtons' type="text" name='cel' placeholder='Celular' required /> */}
+                    <IMaskInput mask={"(00) 000000000"} name="cel" id="cel" placeholder="Celular" className="imask inputButtons" required />
                     <input className='inputButtons' type="email" name='email' placeholder='Seu e-mail' required />
                     <textarea className='messageValue' name="message" placeholder='Digite aqui sua mensagem...' value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
                     <button className='inputButtons' id="buttonForm" type='submit' >Enviar</button>
