@@ -1,32 +1,38 @@
 # Meu portfólio 😀!
 
-Seja bem-vindo(a) ao meu Portfólio, feito com ReactJS e mais algumas coisas interessantes.. 👀 <br>
+Seja bem-vindo(a) ao meu repositório do meu Portfólio, feito com React Js e muito carinho. 
 
-Aprendi bastante coisa com esse projeto, tecnologias, bibliotecas e uns hooks que eu não tinha visto ainda..
+## Projeto
 
-<h3><i>Aqui vai um preview do site, porém tem bastante coisa legal lá, visite no link ao lado ou abaixo 😀</i></h3>
+Desenvolver este projeto foi uma experiência gratificante e desafiadora, através do uso de muitas tecnologias e bibliotecas  
+pude criar um site interativo e responsivo.
 
+Enfrentei desafios ao implementar animações com o Lottie React e o Use Spring, mas essas adições trouxeram um toque especial
+ao projeto, esta jornada de desenvolvimento fortaleceu minhas habilidades em React Js e me deixou orgulhoso do
+resultado final.
+
+## Desktop 💻
+  
 <div align='center'>
-<h2> Desktop 💻 </h2>
-<img src='https://user-images.githubusercontent.com/62243365/189427824-b5af03e3-f5f0-49d8-882c-330601c59288.png' />
-
-<h2> Mobile 📱 </h2>
-<img src='https://user-images.githubusercontent.com/62243365/189427820-088b2fc9-2122-4457-bc68-8a2d8dff0e47.png' />
+  <img src='https://github.com/leonardorochedo/portfolio/assets/62243365/70c80620-7f4f-48f5-a3b2-b40718329de3' />
+</div>
+  
+## Mobile 📱
+ 
+<div align='center'>
+  <img src='https://github.com/leonardorochedo/portfolio/assets/62243365/9cecd187-f1df-4773-876d-552d9190fb5a' />
 </div>
 
-<div align='center'>
-<br>
-Utilizei nesse projeto tecnologias como ⚛️
+## Tecnologias
 
-ReactJS<br>
-react-router-dom<br>
-react-parallax-tilt<br>
-react-toastify
-lottie-react<br>
-swiper-js<br>
-email-js<br>
-use-spring<br>
+• **React Router Dom** biblioteca que permite adicionar roteamento em aplicativos React para facilitar a navegação.<br>
+• **React Parallax Tilt** adiciona efeitos de paralaxe e inclinação aos elementos.<br>
+• **React Toastify** exibir notificações elegantes e responsivas em um aplicativo.<br>
+• **Lottie React** permite renderizar animações JSON de forma fácil em um aplicativo React.<br>
+• **Swiper Js** efeitos de carrossel e slides de forma interativa.<br>
+• **Email Js** facilita o envio de e-mails por meio de serviços de e-mail.<br>
+• **Use Spring** oferece uma sintaxe simples para adicionar animações baseadas em molas em componentes React.<br>
 
-Para visita-lo acesse: www.leonardorochedo.com.br
+<i>Para visita-lo acesse: www.leonardorochedo.com.br</i>
 
 </div>
