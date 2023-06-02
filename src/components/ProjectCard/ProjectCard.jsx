@@ -7,6 +7,7 @@ export function ProjectCard(props) {
     const icon1 = props.icon1 || null
     const icon2 = props.icon2 || null
     const icon3 = props.icon3 || null
+    const backImage = props.image || null
 
     return (
         <a href={props.link} target="_blank" className='project-cards'>
@@ -22,7 +23,7 @@ export function ProjectCard(props) {
                     <i><img src={icon3} alt="" /></i>
                 </div>
             </div>
-            <img id='background' src={props.image} alt="Foto de fundo" />
+            <img id='background' src={backImage} alt="Foto de fundo" />
         </div>
         </a>
     );
