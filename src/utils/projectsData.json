@@ -11,101 +11,147 @@
         "newcars": {
             "title": "NewCars",
             "text": "Um lugar onde você pode vender e comprar seu veículo!",
-            "link": "https://github.com/leonardorochedo/NewCars"
+            "link": "https://github.com/leonardorochedo/NewCars",
+            "icon1": "reactImg",
+            "icon2": "nodeImg",
+            "icon3": "mongoImg"
         },
         "getapet": {
             "title": "Get A Pet",
             "text": "Site para você que quer adotar um animalzinho e também publicar que está doando seu pet!!",
-            "link": "https://github.com/leonardorochedo/get-a-pet"
+            "link": "https://github.com/leonardorochedo/get-a-pet",
+            "icon1": "reactImg",
+            "icon2": "nodeImg",
+            "icon3": "mongoImg"
             },
         "dsmeta": {
             "title": "DSMeta",
             "text": "Sistema de verificar as vendas dos funcionários e notifica via SMS qual foi o melhor!",
-            "link": "https://github.com/leonardorochedo/dsmeta"
+            "link": "https://github.com/leonardorochedo/dsmeta",
+            "icon1": "reactImg",
+            "icon2": "springImg",
+            "icon3": "mysqlImg"
         },
         "toughts": {
             "title": "Toughts",
             "text": "Um lugar onde você pode publicar seus pensamentos, e também ler o de outros usuários!",
-            "link": "https://github.com/leonardorochedo/toughts"
+            "link": "https://github.com/leonardorochedo/toughts",
+            "icon1": "hbsImg",
+            "icon2": "nodeImg",
+            "icon3": "mysqlImg"
         }
     },
     "backend": {
         "msspring": {
             "title": "Microsserviços Spring",
             "text": "Microsserviços Java com Spring Boot, Spring Cloud e muito mais!",
-            "link": "https://github.com/leonardorochedo/ms-spring"
+            "link": "https://github.com/leonardorochedo/ms-spring",
+            "icon1": "springImg",
+            "icon2": "mysqlImg"
         },
         "workspringmongo": {
             "title": "Spring Boot Post's",
             "text": "Workshop feito em Spring Boot + Mongo de postagens!",
-            "link": "https://github.com/leonardorochedo/workshop-springboot-mongodb"
+            "link": "https://github.com/leonardorochedo/workshop-springboot-mongodb",
+            "icon1": "springImg",
+            "icon2": "mongoImg"
         },
         "workspring": {
             "title": "Spring Boot Shop",
             "text": "Workshop feito em Spring Boot + H2 de uma loja!",
-            "link": "https://github.com/leonardorochedo/workshop-springboot"
+            "link": "https://github.com/leonardorochedo/workshop-springboot",
+            "icon1": "springImg",
+            "icon2": "mysqlImg"
         },
         "daojdbc": {
             "title": "Java JDBC",
             "text": "Projeto feito em curso que utilizamos a biblioteca JDBC na linguagem Java!",
-            "link": "https://github.com/leonardorochedo/dao-jdbc"
+            "link": "https://github.com/leonardorochedo/dao-jdbc",
+            "icon1": "javaImg",
+            "icon2": "mongoImg"
         },
         "chessmatch": {
             "title": "Chess Java",
             "text": "Jogo de Xadrez feito totalmente em Java!",
-            "link": "https://github.com/leonardorochedo/chessmatch"
+            "link": "https://github.com/leonardorochedo/chessmatch",
+            "icon1": "javaImg"
         },
         "nodejsmongo": {
             "title": "Shop Node",
             "text": "Primeiro projeto em Node.js + MongoDB ✔️",
-            "link": "https://github.com/leonardorochedo/nodejs-mongodb"
+            "link": "https://github.com/leonardorochedo/nodejs-mongodb",
+            "icon1": "nodeImg",
+            "icon2": "mongoImg"
         },
         "bankaccount": {
             "title": "Bank Account",
             "text": "Simulador de um Caixa Eltrônico / Banco feito com NodeJS 🏦",
-            "link": "https://github.com/leonardorochedo/bank-account"
+            "link": "https://github.com/leonardorochedo/bank-account",
+            "icon1": "nodeImg"
         }
     },
     "frontend": {
         "paduan": {
             "title": "Páduan",
             "text": "Trabalho que fiz para uma agência de viagens!!",
-            "link": "https://www.paduanviagens.com.br"
+            "link": "https://www.paduanviagens.com.br",
+            "icon1": "reactImg",
+            "icon2": "cssImg"
         },
         "pokedex": {
             "title": "Pokédex",
             "text": "Pesquise sobre seu Pokémon preferido e veja sua descrição e poder!",
-            "link": "https://pokedex-seven-drab.vercel.app/"
+            "link": "https://pokedex-seven-drab.vercel.app/",
+            "icon1": "reactImg",
+            "icon2": "tsImg",
+            "icon3": "cssImg"
         },
         "sunrain": {
             "title": "Sunrain",
             "text": "Consulte a previsão do tempo atual apenas com o nome da cidade!",
-            "link": "https://sunrain.vercel.app/"
+            "link": "https://sunrain.vercel.app/",
+            "icon1": "reactImg",
+            "icon2": "tsImg",
+            "icon3": "cssImg"
         },
         "fotonovo": {
             "title": "Foto Novo",
             "text": "Website de uma loja local, utilizei HTML, CSS, JavaScript",
-            "link": "https://www.fotonovo.com.br/"
+            "link": "https://www.fotonovo.com.br/",
+            "icon1": "htmlImg",
+            "icon2": "cssImg",
+            "icon3": "jsImg"
         },
         "jta": {
             "title": "JTA Confecções",
             "text": "Website de uma loja de roupas, utilizei HTML, CSS, JavaScript",
-            "link": "https://jtaconfeccoes.com.br/"
+            "link": "https://jtaconfeccoes.com.br/",
+            "icon1": "htmlImg",
+            "icon2": "cssImg",
+            "icon3": "jsImg"
         },
         "rocketcard": {
             "title": "RocketCard",
             "text": "Desafio de consumir a API do GitHub gerando um cartão",
-            "link": "https://github.com/leonardorochedo/rocketcard"
+            "link": "https://github.com/leonardorochedo/rocketcard",
+            "icon1": "htmlImg",
+            "icon2": "cssImg",
+            "icon3": "tsImg"
         },
         "listapresenca": {
             "title": "Lista de Presença",
             "text": "Desafio de fazer uma lista de presença de alunos em ReactJS",
-            "link": "https://github.com/leonardorochedo/lista_presenca"
+            "link": "https://github.com/leonardorochedo/lista_presenca",
+            "icon1": "reactImg",
+            "icon2": "jsImg",
+            "icon3": "cssImg"
         },
         "countdown": {
             "title": "Countdown",
             "text": "Desafio de fazer uma contagem regressiva, implementei também umas animações e modais",
-            "link": "https://github.com/leonardorochedo/Countdown"
+            "link": "https://github.com/leonardorochedo/Countdown",
+            "icon1": "reactImg",
+            "icon2": "cssImg"
         }
     }
 }
