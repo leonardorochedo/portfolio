@@ -14,33 +14,6 @@ import { Waves } from "../../../src/components/Waves/Waves";
 import { ProjectCard } from "../../../src/components/ProjectCard/ProjectCard";
 import { ContactButton } from "../../../src/components/ContactButton/ContactButton";
 
-// Images
-
-// Full
-import backNewCars from '../../assets/projects/newcars.png';
-import backToughts from '../../assets/projects/toughts.png';
-import backDsmeta from '../../assets/projects/dsmeta.png';
-import backGetAPet from '../../assets/projects/get-a-pet.png';
-
-// Back
-import backBankaccount from '../../assets/projects/bankaccount.png';
-import backChessmatch from '../../assets/projects/chessmatch.png';
-import backDaojdbc from '../../assets/projects/daojdbc.png';
-import backMsspring from '../../assets/projects/msspring.png';
-import backNodejsmongo from '../../assets/projects/nodejsmongo.png';
-import backWorkspring from '../../assets/projects/workspring.png';
-import backWorkspringmongo from '../../assets/projects/workspringmongo.png';
-
-// Front
-import backFotonovo from '../../assets/projects/fotonovo.png';
-import backJta from '../../assets/projects/jta.png';
-import backRocketcard from '../../assets/projects/rocketcard.png';
-import backListPresen from '../../assets/projects/listapresenca.png';
-import backCountdown from '../../assets/projects/countdown.png';
-import backSunrain from '../../assets/projects/sunrain.png';
-import backPokedex from '../../assets/projects/pokedex.png';
-import backPaduan from '../../assets/projects/paduan.png';
-
 // Icons
 import reactImg from '../../assets/techs/react-icon.png';
 import tsImg from '../../assets/techs/type-icon.png';
@@ -63,12 +36,25 @@ export function Projects() {
     const backend = projectsData.backend
     const frontend = projectsData.frontend
 
-    function verifyImage(path) {
-        const icons = [{title: 'reactImg', image: reactImg}, {title: 'tsImg', image: tsImg}]
+    function verifyImage(titleIcon) {
+        const icons = [
+          { title: 'reactImg', image: reactImg },
+          { title: 'tsImg', image: tsImg },
+          { title: 'jsImg', image: jsImg },
+          { title: 'tsImg', image: tsImg },
+          { title: 'nodeImg', image: nodeImg },
+          { title: 'javaImg', image: javaImg },
+          { title: 'mysqlImg', image: mysqlImg },
+          { title: 'mongoImg', image: mongoImg },
+          { title: 'hbsImg', image: hbsImg },
+          { title: 'htmlImg', image: htmlImg },
+          { title: 'cssImg', image: cssImg },
+          { title: 'springImg', image: springImg },
+        ];
+      
+        const matchingIcon = icons.find((icon) => icon.title === titleIcon);
 
-        icons.map((icon) => {
-            if(path == icon.title) return icon.image
-        })
+        return matchingIcon ? matchingIcon.image : null;
     }
 
     return (
@@ -87,7 +73,7 @@ export function Projects() {
                         {Object.keys(fullstack).map((app, index) => {
                             const project = fullstack[app];
 
-                            return <SwiperSlide key={index} ><ProjectCard title={project.title} text={project.text} link={project.link} image={backNewCars} icon1={project.icon1} icon2={project.icon2} icon3={project.icon3}/></SwiperSlide>
+                            return <SwiperSlide key={index} ><ProjectCard title={project.title} text={project.text} link={project.link} image={project.imageURL} icon1={verifyImage(project.icon1)} icon2={verifyImage(project.icon2)} icon3={verifyImage(project.icon3)}/></SwiperSlide>
                         })}
                     </Swiper>
                 </div>
@@ -104,7 +90,7 @@ export function Projects() {
                         {Object.keys(backend).map((app, index) => {
                             const project = backend[app];
 
-                            return <SwiperSlide key={index} ><ProjectCard title={project.title} text={project.text} link={project.link} image={backNewCars} icon1={project.icon1} icon2={project.icon2} icon3={project.icon3}/></SwiperSlide>
+                            return <SwiperSlide key={index} ><ProjectCard title={project.title} text={project.text} link={project.link} image={project.imageURL} icon1={verifyImage(project.icon1)} icon2={verifyImage(project.icon2)} icon3={verifyImage(project.icon3)}/></SwiperSlide>
                         })}
                     </Swiper>
                 </div>
@@ -121,7 +107,7 @@ export function Projects() {
                         {Object.keys(frontend).map((app, index) => {
                             const project = frontend[app];
 
-                            return <SwiperSlide key={index}><ProjectCard title={project.title} text={project.text} link={project.link} image={backNewCars} icon1={project.icon1} icon2={project.icon2} icon3={project.icon3}/></SwiperSlide>
+                            return <SwiperSlide key={index}><ProjectCard title={project.title} text={project.text} link={project.link} image={project.imageURL} icon1={verifyImage(project.icon1)} icon2={verifyImage(project.icon2)} icon3={verifyImage(project.icon3)}/></SwiperSlide>
                         })}
                     </Swiper>
                 </div>
