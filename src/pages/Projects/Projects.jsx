@@ -14,7 +14,7 @@ import { Waves } from "../../../src/components/Waves/Waves";
 import { ProjectCard } from "../../../src/components/ProjectCard/ProjectCard";
 import { ContactButton } from "../../../src/components/ContactButton/ContactButton";
 
-// Imagens
+// Images
 
 // Full
 import backNewCars from '../../assets/projects/newcars.png';
@@ -63,6 +63,14 @@ export function Projects() {
     const backend = projectsData.backend
     const frontend = projectsData.frontend
 
+    function verifyImage(path) {
+        const icons = [{title: 'reactImg', image: reactImg}, {title: 'tsImg', image: tsImg}]
+
+        icons.map((icon) => {
+            if(path == icon.title) return icon.image
+        })
+    }
+
     return (
         <>
         <Header />
@@ -76,10 +84,14 @@ export function Projects() {
                     slidesPerView={1}
                     pagination={{ clickable: true, dynamicBullets: true }}
                     >
-                        <SwiperSlide><ProjectCard title={fullstack.newcars.title} text={fullstack.newcars.text} link={fullstack.newcars.link} image={backNewCars} icon1={reactImg} icon2={nodeImg} icon3={mongoImg}/></SwiperSlide>
-                        <SwiperSlide><ProjectCard title={fullstack.dsmeta.title} text={fullstack.dsmeta.text} link={fullstack.dsmeta.link} image={backDsmeta} icon1={reactImg} icon2={springImg} icon3={mysqlImg}/></SwiperSlide>
+                        {Object.keys(fullstack).map((app) => {
+                            const project = fullstack[app];
+
+                            return <SwiperSlide><ProjectCard title={project.title} text={project.text} link={project.link} image={backNewCars} icon1={verifyImage(project.icon1)} icon2={project.icon2} icon3={project.icon3}/></SwiperSlide>
+                        })}
+                        {/* <SwiperSlide><ProjectCard title={fullstack.dsmeta.title} text={fullstack.dsmeta.text} link={fullstack.dsmeta.link} image={backDsmeta} icon1={reactImg} icon2={springImg} icon3={mysqlImg}/></SwiperSlide>
                         <SwiperSlide><ProjectCard title={fullstack.getapet.title} text={fullstack.getapet.text} link={fullstack.getapet.link} image={backGetAPet} icon1={reactImg} icon2={nodeImg} icon3={mongoImg}/></SwiperSlide>
-                        <SwiperSlide><ProjectCard title={fullstack.toughts.title} text={fullstack.toughts.text} link={fullstack.toughts.link} image={backToughts} icon1={nodeImg} icon2={hbsImg} icon3={mysqlImg}/></SwiperSlide>
+                        <SwiperSlide><ProjectCard title={fullstack.toughts.title} text={fullstack.toughts.text} link={fullstack.toughts.link} image={backToughts} icon1={nodeImg} icon2={hbsImg} icon3={mysqlImg}/></SwiperSlide> */}
                     </Swiper>
                 </div>
             </div>

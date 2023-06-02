@@ -1,10 +1,10 @@
 // Rotas
-import { Home } from "./routes/Home/Home";
-import { About } from "./routes/About/About";
-import { Techs } from "./routes/Techs/Techs";
-import { Projects } from "./routes/Projects/Projects";
-import { ContactPage } from "./routes/ContactPage/ContactPage";
-import { NotFound } from "./routes/NotFound/NotFound";
+import { Home } from "./pages/Home/Home";
+import { About } from "./pages/About/About";
+import { Techs } from "./pages/Techs/Techs";
+import { Projects } from "./pages/Projects/Projects";
+import { ContactPage } from "./pages/ContactPage/ContactPage";
+import { NotFound } from "./pages/NotFound/NotFound";
 
 // Lib
 import { 
