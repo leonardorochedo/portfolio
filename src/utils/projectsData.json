@@ -47,6 +47,14 @@
         }
     },
     "backend": {
+        "firstapinestjs": {
+            "title": "First API NestJS",
+            "text": "Minha primeira API criada com NestJS + Prisma!",
+            "link": "https://github.com/leonardorochedo/first-api-nestjs",
+            "image": "backFirstapinestjs",
+            "icon1": "nestImg",
+            "icon2": "prismaImg"
+        },
         "msspring": {
             "title": "Microsserviços Spring",
             "text": "Microsserviços Java com Spring Boot, Spring Cloud e muito mais!",

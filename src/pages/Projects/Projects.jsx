@@ -22,6 +22,7 @@ import backToughts from '../../assets/projects/toughts.png';
 import backDsmeta from '../../assets/projects/dsmeta.png';
 import backGetAPet from '../../assets/projects/getapet.png';
 // Back
+import backFirstapinestjs from '../../assets/projects/firstapinestjs.png';
 import backMsspring from '../../assets/projects/msspring.png';
 import backWorkspringmongo from '../../assets/projects/workspringmongo.png';
 import backWorkspring from '../../assets/projects/workspring.png';
@@ -44,6 +45,7 @@ import reactImg from '../../assets/techs/react-icon.png';
 import tsImg from '../../assets/techs/type-icon.png';
 import jsImg from '../../assets/techs/js-icon.png';
 import nodeImg from '../../assets/techs/node-icon.png';
+import nestImg from '../../assets/techs/nest-icon.png';
 import javaImg from '../../assets/techs/java-icon.png'
 import mysqlImg from '../../assets/techs/mysql-icon.png';
 import mongoImg from '../../assets/techs/mongo-icon.png';
@@ -51,6 +53,7 @@ import hbsImg from '../../assets/techs/hbs-icon.png';
 import htmlImg from '../../assets/techs/html-icon.png';
 import cssImg from '../../assets/techs/css-icon.png';
 import springImg from '../../assets/techs/spring-icon.svg';
+import prismaImg from '../../assets/techs/prisma-icon.png';
 
 // Projects
 import projectsData from '../../utils/projectsData';
@@ -68,6 +71,7 @@ export function Projects() {
           { title: 'jsImg', image: jsImg },
           { title: 'tsImg', image: tsImg },
           { title: 'nodeImg', image: nodeImg },
+          { title: 'nestImg', image: nestImg },
           { title: 'javaImg', image: javaImg },
           { title: 'mysqlImg', image: mysqlImg },
           { title: 'mongoImg', image: mongoImg },
@@ -75,6 +79,7 @@ export function Projects() {
           { title: 'htmlImg', image: htmlImg },
           { title: 'cssImg', image: cssImg },
           { title: 'springImg', image: springImg },
+          { title: 'prismaImg', image: prismaImg },
         ];
 
         const images = [
@@ -83,6 +88,7 @@ export function Projects() {
             { title: 'backGetAPet', image: backGetAPet },
             { title: 'backDsmeta', image: backDsmeta },
             { title: 'backToughts', image: backToughts },
+            { title: 'backFirstapinestjs', image: backFirstapinestjs },
             { title: 'backMsspring', image: backMsspring },
             { title: 'backWorkspringmongo', image: backWorkspringmongo },
             { title: 'backWorkspring', image: backWorkspring },
