@@ -52,22 +52,22 @@ export function Techs() {
                 <div className="backend-techs">
                     <div className="tilt-card">
                         <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
-                            <CardButton name="Node.js" class="c front" style={nodeImg}/>
-                        </Tilt>
-                    </div>
-                    <div className="tilt-card">
-                        <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
-                            <CardButton name="NestJS" class="c front" style={nestImg}/>
+                            <CardButton name="Java" class="c front" style={javaImg}/>
                         </Tilt>
                     </div>
                     <div className="tilt-card">
                         <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
                             <CardButton name="Spring" class="c front" style={springImg}/>
                         </Tilt>
+                    </div>   
+                    <div className="tilt-card">
+                        <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
+                            <CardButton name="Node.js" class="c front" style={nodeImg}/>
+                        </Tilt>
                     </div>
                     <div className="tilt-card">
                         <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
-                            <CardButton name="Java" class="c front" style={javaImg}/>
+                            <CardButton name="NestJS" class="c front" style={nestImg}/>
                         </Tilt>
                     </div>
                 </div>
