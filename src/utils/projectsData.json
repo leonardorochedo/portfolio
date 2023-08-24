@@ -3,7 +3,7 @@
         "newcars": {
             "title": "NewCars",
             "text": "Um lugar onde você pode vender e comprar seu veículo!",
-            "link": "https://github.com/leonardorochedo/newcars",
+            "link": "https://newcars.vercel.app",
             "image": "backNewCars",
             "icon1": "reactImg",
             "icon2": "springImg",
