@@ -6,7 +6,7 @@
   align-items: center;
   text-align: center;
 
-  margin: 2rem 2rem;
+  margin: 4rem 2rem;
 }
 
 .form {
@@ -131,7 +131,6 @@ button.disabled {
 }
 
 @media (min-width: 1000px) {
-
   .container-contact {
     flex-direction: row;
     margin: 20vh 2rem;

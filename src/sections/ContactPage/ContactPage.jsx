@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 import { Waves } from '../../components/Waves/Waves';
+import { BackButton } from '../../components/BackButton/BackButton';
 
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
@@ -77,11 +78,11 @@ export function ContactPage() {
 
     return (
         <div className="container-contact">
+            <BackButton />
             <div className="form">
                 <h2 className='tittle-form'>Me mande um <i>E-mail!</i></h2>
                 <form onSubmit={sendEmail}>
                     <input className='inputButtons' type="text" name='name' placeholder='Nome' required />
-                    {/* <input className='inputButtons' type="text" name='cel' placeholder='Celular' required /> */}
                     <IMaskInput mask={"(00) 000000000"} name="cel" id="cel" placeholder="Celular" className="imask inputButtons" required />
                     <input className='inputButtons' type="email" name='email' placeholder='Seu e-mail' required />
                     <textarea className='messageValue' name="message" placeholder='Digite aqui sua mensagem...' value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>

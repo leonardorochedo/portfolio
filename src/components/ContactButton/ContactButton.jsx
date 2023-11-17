@@ -10,10 +10,13 @@ import './ContactButton.css';
 export function ContactButton() {
 
     return (
-        <>
         <div className="button">
-            <Link to="/contato" style={{textDecoration: 'none'}}><button><img src={planePaper} alt="Aviao de papel voando" />Contato</button></Link>
+            <Link to="/contato" style={{textDecoration: 'none'}}>
+                <button>
+                    <img src={planePaper} alt="Aviao de papel voando" />
+                    Contato
+                </button>
+            </Link>
         </div>
-        </>
     );
 }
