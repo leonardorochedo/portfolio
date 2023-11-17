@@ -1,10 +1,7 @@
 // Rotas
-import { Home } from "./pages/Home/Home";
-import { About } from "./pages/About/About";
-import { Techs } from "./pages/Techs/Techs";
-import { Projects } from "./pages/Projects/Projects";
-import { ContactPage } from "./pages/ContactPage/ContactPage";
-import { NotFound } from "./pages/NotFound/NotFound";
+import { Home } from "./sections/Home/Home";
+import { ContactPage } from "./sections/ContactPage/ContactPage";
+import { NotFound } from "./sections/NotFound/NotFound";
 
 // Lib
 import { 
@@ -19,9 +16,6 @@ export function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/sobre" element={<About />} />
-        <Route path="/tecnologias" element={<Techs />} />
-        <Route path="/projetos" element={<Projects />} />
         <Route path="/contato" element={<ContactPage />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>

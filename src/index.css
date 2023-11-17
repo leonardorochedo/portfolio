@@ -26,6 +26,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -68,15 +70,4 @@ p {
   color: white;
 
   mix-blend-mode: exclusion;
-}
-
-@media (min-width: 1000px) {
-  .container {
-    display: flex;
-    flex-direction: row-reverse;
-
-    justify-content: space-around;
-
-    margin: 3rem;
-  }
 }

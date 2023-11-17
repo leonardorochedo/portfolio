@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import emailjs from 'emailjs-com';
 
-import { Header } from '../../components/Header/Header';
 import { Waves } from '../../components/Waves/Waves';
 
 import { toast } from 'react-toastify';
@@ -77,11 +76,9 @@ export function ContactPage() {
     }, [message])
 
     return (
-        <>
-        <Header />
-        <div className="container contact">
+        <div className="container-contact">
             <div className="form">
-            <h2 className='tittle-form'>Me mande um <i>E-mail!</i></h2>
+                <h2 className='tittle-form'>Me mande um <i>E-mail!</i></h2>
                 <form onSubmit={sendEmail}>
                     <input className='inputButtons' type="text" name='name' placeholder='Nome' required />
                     {/* <input className='inputButtons' type="text" name='cel' placeholder='Celular' required /> */}
@@ -100,6 +97,5 @@ export function ContactPage() {
             </div>
             <Waves />
         </div>
-        </>
     );
 }

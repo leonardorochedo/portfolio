@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 import { ToastContainer } from "react-toastify";
 
@@ -38,16 +36,16 @@ export function Header() {
     return (
         <header>
             <ToastContainer 
-                        position="top-left"
-                        autoClose={5000}
-                        hideProgressBar={false}
-                        newestOnTop={false}
-                        closeOnClick
-                        rtl={false}
-                        pauseOnFocusLoss
-                        draggable
-                        pauseOnHover
-                        theme="light"
+                position="top-left"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
             />
         <div className="control-button">
             <button id='openButton' onClick={openModal}><img id='navicon' src={navImage} alt="Menu" /></button>
@@ -55,10 +53,22 @@ export function Header() {
         <div className="control-header">
             <div className='header-projects'>
                 <ul>
-                    <li className='home'><Link to="/"><span className='menu'></span><a className='menu'>ÍNICIO</a></Link></li>
-                    <li className='about'><Link to="/sobre"><span className='menu'></span><a className='menu'>SOBRE MIM</a></Link></li>
-                    <li className='tec'><Link to="/tecnologias"><span className='menu'></span><a className='menu'>TECNOLOGIAS</a></Link></li>
-                    <li className='proj'><Link to="/projetos"><span className='menu'></span><a className='menu'>PROJETOS</a></Link></li>
+                    <li className='home'>
+                        <span className='menu'></span>
+                        <a className='menu' href='#home'>ÍNICIO</a>
+                    </li>
+                    <li className='about'>
+                        <span className='menu'></span>
+                        <a className='menu' href='#about'>SOBRE MIM</a>
+                    </li>
+                    <li className='tec'>
+                        <span className='menu'></span>
+                        <a className='menu' href='#techs'>TECNOLOGIAS</a>
+                    </li>
+                    <li className='proj'>
+                        <span className='menu'></span>
+                        <a className='menu' href='#projects'>PROJETOS</a>
+                    </li>
                 </ul>
             </div>
         </div>
