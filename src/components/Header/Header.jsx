@@ -55,19 +55,19 @@ export function Header() {
                 <ul>
                     <li className='home'>
                         <span className='menu'></span>
-                        <a className='menu' href='#home'>ÍNICIO</a>
-                    </li>
-                    <li className='about'>
-                        <span className='menu'></span>
-                        <a className='menu' href='#about'>SOBRE MIM</a>
+                        <a className='menu' href='#home'>Início</a>
                     </li>
                     <li className='tec'>
                         <span className='menu'></span>
-                        <a className='menu' href='#techs'>TECNOLOGIAS</a>
+                        <a className='menu' href='#techs'>Tecnologias</a>
                     </li>
                     <li className='proj'>
                         <span className='menu'></span>
-                        <a className='menu' href='#projects'>PROJETOS</a>
+                        <a className='menu' href='#projects'>Projetos</a>
+                    </li>
+                    <li className='proj'>
+                        <span className='menu'></span>
+                        <a className='menu' href='#projects'>Contato</a>
                     </li>
                 </ul>
             </div>

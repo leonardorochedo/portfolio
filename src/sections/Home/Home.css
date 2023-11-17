@@ -45,38 +45,6 @@
   height: 35px;
 }
 
-/* About */
-
-.container-about {
-  display: flex;
-  flex-direction: column;
-}
-
-.about h2 {
-  margin: 2rem;
-}
-
-img.perfil {
-  width: 10rem;
-
-  border: 2px solid transparent;
-  border-image: linear-gradient(
-    48deg,
-    rgba(224, 255, 0, 1) 0%,
-    rgba(225, 251, 3, 1) 30%,
-    rgba(0, 14, 255, 1) 100%
-  );
-  border-image-slice: 1;
-
-  padding: 0.25rem;
-  margin-top: 2rem;
-}
-
-.about p {
-  font-size: 1.2rem;
-  padding: 2rem 0;
-}
-
 /* Techs */
 
 .container-techs {
@@ -136,23 +104,10 @@ img.perfil {
 }
 
 @media (min-width: 600px) {
-
   /* Home */
 
   .text {
     margin-top: 2rem;
-  }
-
-  /* About */
-
-  img.perfil {
-    width: 14rem;
-    margin: 3rem 0;
-  }
-
-  div.about p {
-    font-size: 1.35rem;
-    padding: 2rem 4rem;
   }
 
   /* Techs */
@@ -183,7 +138,6 @@ img.perfil {
 }
 
 @media (min-width: 1000px) {
-
   /* Home */
 
   .container-home {
@@ -219,17 +173,6 @@ img.perfil {
 
     width: 35px;
     height: 35px;
-  }
-
-  /* About */
-
-  img.perfil {
-    width: 12rem;
-    margin: 2rem 0;
-  }
-
-  div.about p {
-    padding: 2em 4em;
   }
 
   /* Techs */

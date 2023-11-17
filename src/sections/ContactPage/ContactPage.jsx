@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 
 import emailjs from 'emailjs-com';
 
-import { Waves } from '../../components/Waves/Waves';
 import { BackButton } from '../../components/BackButton/BackButton';
 
 import { toast } from 'react-toastify';
@@ -96,7 +95,6 @@ export function ContactPage() {
                 </a>
                 <p>escaneie ou clique</p>
             </div>
-            <Waves />
         </div>
     );
 }
