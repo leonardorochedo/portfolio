@@ -1,0 +1,157 @@
+.container-contact {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  
+    margin: 4rem 2rem;
+}
+  
+.form {
+    width: 80vw;
+}
+  
+h2.tittle-form {
+    font-size: 28px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+
+    border: none;
+}
+
+.form form input,
+.form form textarea {
+    padding: 0.5rem;
+}
+
+.form form .inputButtons {
+    width: 80vw;
+
+    border-radius: 5px;
+
+    margin-top: 1.5rem;
+
+    font-family: "Poppins", Times, serif;
+    font-weight: 400;
+
+    height: 3rem;
+}
+
+.form form textarea {
+    border-radius: 5px;
+
+    margin-top: 1.5rem;
+
+    font-family: "Poppins", Times, serif;
+    font-weight: 400;
+
+    height: 6rem;
+    resize: none;
+}
+
+button.inputButtons,
+button.enabled {
+    background-color: blue;
+    border: none;
+
+    color: white;
+
+    cursor: pointer;
+    transition: 0.5s;
+
+    width: 20rem;
+
+    opacity: 1;
+
+    transition: 0.3s;
+}
+
+button.enabled:hover {
+    opacity: 0.75;
+}
+
+button.disabled {
+    cursor: initial;
+    background-color: #ff0000c4;
+    opacity: 0.75;
+
+    transition: 0.3s;
+}
+
+.container-contact .whatsapp {
+    margin-top: 4rem;
+
+    width: 80vw;
+    height: 22rem;
+
+    border-radius: 10px;
+    background-color: rgb(0 0 0 / 87%);
+    text-align-last: center;
+}
+
+.container-contact .whatsapp h3 {
+    margin: 2rem 0;
+}
+
+.container-contact .whatsapp span,
+.container-contact .whatsapp p {
+    font-style: italic;
+}
+
+.container-contact .whatsapp span {
+    color: rgb(56 230 15);
+}
+
+.container-contact .whatsapp a {
+    -webkit-box-shadow: 2px 5px 16px 0px #000000, -50px -50px 0px -30px rgba(0, 0, 0, 0);
+    box-shadow: 2px 5px 16px 0px #000000, -50px -50px 0px -30px rgba(0, 0, 0, 0);
+}
+
+.container-contact .whatsapp p {
+margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+
+    .form,
+    .form form input,
+    .form form textarea,
+    .form form .inputButtons {
+        width: 50vw;
+    }
+
+    .container-contact .whatsapp {
+        width: 50vw;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    .container-contact {
+        flex-direction: row;
+        margin: 20vh 2rem;
+    }
+
+    .form,
+    .form form input,
+    .form form textarea,
+    .form form .inputButtons {
+        width: 25vw;
+    }
+
+    .container-contact .whatsapp {
+        width: 25vw;
+    }
+
+    .form,
+    .container-contact .whatsapp {
+        margin-top: 2.5em;
+    }
+
+}

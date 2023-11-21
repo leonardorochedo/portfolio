@@ -15,7 +15,6 @@
     "react-dom": "^18.2.0",
     "react-imask": "^6.6.1-alpha.2",
     "react-parallax-tilt": "^1.7.67",
-    "react-router-dom": "^6.3.0",
     "react-spring": "^9.6.1",
     "react-toastify": "^9.1.1",
     "swiper": "^8.3.2"

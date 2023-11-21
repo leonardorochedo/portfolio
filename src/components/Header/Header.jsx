@@ -67,7 +67,7 @@ export function Header() {
                     </li>
                     <li className='proj'>
                         <span className='menu'></span>
-                        <a className='menu' href='#projects'>Contato</a>
+                        <a className='menu' href='#contact'>Contato</a>
                     </li>
                 </ul>
             </div>
