@@ -3,11 +3,7 @@
     flex-direction: column;
     justify-content: space-around;
   
-    margin-bottom: 5em;
-}
-
-.container-techs h1 {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .tilt-card {

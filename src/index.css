@@ -52,6 +52,10 @@ h1 {
   color: white;
 }
 
+h1.title {
+  margin: 1rem 0 2rem 0;
+}
+
 h2 {
   font-family: "Roboto", Times, serif;
   font-weight: 600;
