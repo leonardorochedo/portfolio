@@ -11,7 +11,8 @@ export function ProjectCard({ children, title, link, backgroundImage }) {
 
     return (
         <a href={link} target='_blank' className="link">
-            <div className='project-card' style={cardStyle}>
+            <div className='project-card'>
+                <div className='background-image' style={cardStyle}></div>
                 <h2>{title}</h2>
                 <div className="project-techs">
                     {children}
