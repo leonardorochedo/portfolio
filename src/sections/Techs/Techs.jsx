@@ -1,82 +1,62 @@
-import Tilt from 'react-parallax-tilt';
-
-import { CardButton } from '../../components/CardButton/CardButton';
+import { TechCard } from '../../components/TechCard/TechCard';
 
 // Icons
-import reactImg from '../../assets/techs/react-icon.png';
-import tsImg from '../../assets/techs/type-icon.png';
-import jsImg from '../../assets/techs/js-icon.png';
-import nodeImg from '../../assets/techs/node-icon.png';
-import nestImg from '../../assets/techs/nest-icon.png';
-import javaImg from '../../assets/techs/java-icon.png'
-import mysqlImg from '../../assets/techs/mysql-icon.png';
-import mongoImg from '../../assets/techs/mongo-icon.png';
-import springImg from '../../assets/techs/spring-icon.svg';
+import { FaJava } from "react-icons/fa";
+import { SiSpring } from "react-icons/si";
+import { BiLogoJavascript } from "react-icons/bi";
+import { BiLogoTypescript } from "react-icons/bi";
+import { FaNodeJs } from "react-icons/fa";
+import { SiNestjs } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { GrMysql } from "react-icons/gr";
+import { SiMongodb } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
 
 import './Techs.css';
 
 export function Techs() {
     return (
         <div className="container-techs" id="techs">
-            <div className="frontend">
-                <h1>Front End</h1>
-                <div className="frontend-techs">
-                    <div className="tilt-card">
-                        <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
-                            <CardButton name="React" class="c front" style={reactImg}/>
-                        </Tilt>
-                    </div>
-                    <div className="tilt-card">
-                        <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
-                            <CardButton name="TypeScript" class="c front" style={tsImg}/>
-                        </Tilt>
-                    </div>
-                    <div className="tilt-card">
-                        <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
-                            <CardButton name="JavaScript" class="c front" style={jsImg}/>
-                        </Tilt>
-                    </div>
-                </div>
-            </div>
-            <div className="backend">
-                <h1>Back End</h1>
-                <div className="backend-techs">
-                    <div className="tilt-card">
-                        <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
-                            <CardButton name="Java" class="c front" style={javaImg}/>
-                        </Tilt>
-                    </div>
-                    <div className="tilt-card">
-                        <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
-                            <CardButton name="Spring" class="c front" style={springImg}/>
-                        </Tilt>
-                    </div>   
-                    <div className="tilt-card">
-                        <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
-                            <CardButton name="Node.js" class="c front" style={nodeImg}/>
-                        </Tilt>
-                    </div>
-                    <div className="tilt-card">
-                        <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
-                            <CardButton name="NestJS" class="c front" style={nestImg}/>
-                        </Tilt>
-                    </div>
-                </div>
-            </div>
-            <div className="database">
-                <h1>Banco de Dados</h1>
-                <div className="database-techs">
-                    <div className="tilt-card">
-                        <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
-                            <CardButton name="MongoDB" class="c front" style={mongoImg}/>
-                        </Tilt>
-                    </div>
-                    <div className="tilt-card">
-                        <Tilt glareEnable='true' glareColor='#ffffff' glareMaxOpacity='0.3' glareBorderRadius='50px'>
-                            <CardButton name="MySQL" class="c front" style={mysqlImg}/>
-                        </Tilt>
-                    </div>
-                </div>
+            <h1 className='title'>Tecnologias</h1>
+            <div className="techs">
+                <TechCard name="Java">
+                    <FaJava size={70} color='#6161f7'/>
+                </TechCard>
+                <TechCard name="Spring Boot">
+                    <SiSpring size={70} color='#6161f7'/>
+                </TechCard>
+                <TechCard name="JavaScript">
+                    <BiLogoJavascript size={70} color='#6161f7'/>
+                </TechCard>
+                <TechCard name="TypeScript">
+                    <BiLogoTypescript size={70} color='#6161f7'/>
+                </TechCard>
+                <TechCard name="Node.js">
+                    <FaNodeJs size={70} color='#6161f7'/>
+                </TechCard>
+                <TechCard name="NestJS">
+                    <SiNestjs size={70} color='#6161f7'/>
+                </TechCard>
+                <TechCard name="HTML">
+                    <FaHtml5 size={70} color='#6161f7'/>
+                </TechCard>
+                <TechCard name="CSS3">
+                    <FaCss3Alt size={70} color='#6161f7'/>
+                </TechCard>
+                <TechCard name="React">
+                    <FaReact size={70} color='#6161f7'/>
+                </TechCard>
+                <TechCard name="MySQL">
+                    <GrMysql size={70} color='#6161f7'/>
+                </TechCard>
+                <TechCard name="MongoDB">
+                    <SiMongodb size={70} color='#6161f7'/>
+                </TechCard>
+                <TechCard name="Docker">
+                    <FaDocker size={70} color='#6161f7'/>
+                </TechCard>
             </div>
         </div>
     );
