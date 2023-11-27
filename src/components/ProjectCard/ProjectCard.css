@@ -1,0 +1,40 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 25rem;
+    height: 14rem;
+
+    border: ridge;
+    border-color: transparent;
+    border-left-width: 8px;
+    border-left-color: var(--primary-color);
+
+    margin: 2rem;
+
+    transition: .3s;
+}
+
+.project-card:hover {
+    border-left-width: 20px;
+}
+
+.project-techs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 50%;
+}
+
+@media (min-width: 1000px) {
+
+    .project-card {
+        width: 30rem;
+        height: 15rem;
+    }    
+
+}
