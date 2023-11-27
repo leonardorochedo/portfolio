@@ -1,6 +1,6 @@
 import './ProjectCard.css';
 
-export function ProjectCard({ children, title, link, backgroundImage }) {
+export function ProjectCard({ children, title, description, link, backgroundImage }) {
 
     const cardStyle = {
         backgroundImage: `url(${backgroundImage})`,
@@ -14,6 +14,7 @@ export function ProjectCard({ children, title, link, backgroundImage }) {
             <div className='project-card'>
                 <div className='background-image' style={cardStyle}></div>
                 <h2>{title}</h2>
+                <p>{description}</p>
                 <div className="project-techs">
                     {children}
                 </div>

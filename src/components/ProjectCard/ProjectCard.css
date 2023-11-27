@@ -28,6 +28,10 @@
     z-index: -1;
 }
 
+.project-card p {
+    margin: 0 1rem;
+}
+
 .project-card:hover {
     border-left-width: 20px;
 }

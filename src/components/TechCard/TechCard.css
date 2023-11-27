@@ -11,6 +11,7 @@
     border-bottom-left-radius: 20px;
 
     border: ridge;
+    border-color: white;
     border-bottom-width: 8px;
     border-bottom-color: var(--primary-color);
 
