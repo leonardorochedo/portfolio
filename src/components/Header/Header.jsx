@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-import { ToastContainer } from "react-toastify";
-
 // Imagens
 import arrowClose from '../../assets/header/close-nav.svg'
 import arrowOpen from '../../assets/header/open-nav.svg'
@@ -35,18 +33,6 @@ export function Header() {
 
     return (
         <header>
-            <ToastContainer 
-                position="top-left"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="light"
-            />
         <div className="control-button">
             <button id='openButton' onClick={openModal}><img id='navicon' src={navImage} alt="Menu" /></button>
         </div>
