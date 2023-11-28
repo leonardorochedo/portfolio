@@ -1,10 +1,10 @@
 import './ProjectCard.css';
 
-export function ProjectCard({ children, title, description, link, backgroundImage }) {
+export function ProjectCard({ children, title, description, link, backgroundImage, isMobile }) {
 
     const cardStyle = {
         backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'contain',
+        backgroundSize: isMobile ? 'contain' : 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPositionX: 'center'
     };
