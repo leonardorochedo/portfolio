@@ -31,6 +31,10 @@ header {
   transition: 0.3s;
 }
 
+.header-projects ul li a:hover {
+  color: var(--primary-color);
+}
+
 .control-button {
   display: flex;
   flex-direction: column;
@@ -75,10 +79,6 @@ button#openButton {
 
   .header-projects ul li {
     padding: 1rem 2rem;
-  }
-
-  .header-projects ul li a:hover {
-    color: blue;
   }
 
   button#openButton {
