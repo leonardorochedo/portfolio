@@ -1,0 +1,14 @@
+.container-techs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    margin: 1rem 0;
+}
+
+.techs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

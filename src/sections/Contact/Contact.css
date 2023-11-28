@@ -1,0 +1,17 @@
+.container-contact {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  
+    margin: 2rem 0;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,11 @@
+.container-about {
+    margin: 1rem 0;
+}
+
+@media (min-width: 1000px) {
+
+    .container-about {
+        margin: 1rem 25vw;
+    }
+
+}

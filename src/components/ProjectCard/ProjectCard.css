@@ -1,56 +1,59 @@
 .project-card {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 
-  background-color: #26262e;
+    width: 25rem;
+    height: 14rem;
 
-  border: none;
+    border: ridge;
+    border-color: transparent;
+    border-left-width: 8px;
+    border-left-color: var(--primary-color);
+
+    margin: 2rem;
+
+    transition: .3s;
+    position: relative;
 }
 
-a.project-cards {
-  text-decoration: none;
-  cursor: pointer;
+.background-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .3;
+    z-index: -1;
 }
 
-.text-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.project-card p {
+    margin: 0 1rem;
 }
 
-.text-card .text {
-  margin: 1.25rem 1rem;
+.project-card:hover {
+    border-left-width: 20px;
 }
 
-.text-card .text h2 {
-  margin-bottom: 1rem;
+.project-card:hover > .background-image {
+    opacity: .4;
 }
 
-.text-card .icons {
-  display: flex;
-  flex-direction: row;
+.project-techs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 
-  justify-content: center;
-  align-items: center;
+    width: 50%;
 }
 
-.text-card .icons i {
-  margin: 1rem;
-  border: none;
-}
+@media (min-width: 1000px) {
 
-.text-card .icons i img {
-  width: 3rem;
-}
+    .project-card {
+        width: 30rem;
+        height: 15rem;
+    }    
 
-.project-card img#background {
-  bottom: 0;
-  position: absolute;
-  width: -webkit-fill-available;
-  z-index: 0;
-}
-
-.project-card .text-card {
-  z-index: 1;
-  background-color: #26262e;
 }
